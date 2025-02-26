@@ -52,6 +52,8 @@ a {
 .home {
     display: flex;
     align-items: center;
+    /*gap between image & text*/
+    gap: 70px;
     height: 100vh;
     padding: 60px 9% 0;
     color: #fff;
@@ -63,6 +65,14 @@ a {
     font-size: 32px;
     margin-top: -10px;
 }
+.home-info h2 span {
+    display: inline-block;
+    color: transparent;
+    /*Text, Javautvecklare design*/
+    -webkit-text-stroke: .7px cornflowerblue;
+}
+/* Javautvecklare animation*/
+
 .home-info p {
     font-size: 16px;
     margin: 10px 0 25px;  
@@ -107,27 +117,48 @@ a {
     box-shadow: 0 0 10px cornflowerblue;
 }
 .home-img .img-box {
+    position: relative;
     width: 32vw;
     height: 32vw;
-    background: cornflowerblue;
+    /*background: cornflowerblue; blue circle around img*/
     border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+
+}
+
 .home-img .img-box .img-item {
     position: relative;
     width: 100%;
     height: 100%;
-    background: slateblue;
+    background: #1f242d;
     border-radius: 50%;
+    border: .1px solid #1f242d;
     display: flex;
     justify-content: center;
+    z-index: 1;
     overflow: hidden;
 }
 .home-img .img-box .img-item img {
     position: absolute;
     /* Adjust top to adjust image*/
     top: 5px;
+    left: 7px;
     display: block;
     width: 85%;
     object-fit: cover;
+    /*mix-blend-mode: lighten;*/
+    mix-blend-mode:normal;
 
 }
