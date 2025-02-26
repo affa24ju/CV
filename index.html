@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>CV Fatema Afroza</title>
+    <!--Länk till Boxicons css, lägga till iconer. Boxicons-> usage-> link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <span>Fatema</span>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <a href="#" class="logo">Portfölj</a>
+        <ul>
+            <li class="active"><a href="#">Hem</a></li>
+            <li><a href="#">Om Mig</a></li>    
+            <li><a href="#">Repo</a></li>    
+            <li><a href="#">Skills</a></li>    
+            <li><a href="#">Erfarenheter</a></li>    
+            <li><a href="#">Kontakt Info</a></li>       
+        </ul>
+    </nav>
+    <!--Content section-->
+    <section class="home">
+        <div class="home-info">
+            <h1>Fatema Afroza</h1>
+            <h2>Jag läser till Javautvecklare</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias laboriosam itaque autem officiis doloribus! Voluptatibus, veritatis odit sed in culpa delectus, ipsum illo nisi impedit beatae iusto. Reprehenderit, ullam aperiam?</p>
+            <!--Button för att ladda ner CV-->
+            <div class="btn-sci">
+                <a href="#" class="btn">Ladda ner CV</a>
+                <!--Icon för sociala medijer-->
+                <div class="sci">
+                    <!--klicka på Boxicons logo, sök för icon, klicka på icon, klicka på font, kopiera kod-->
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <!-- <a href="#"></a> -->
 
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Hem</a></div>
-                <div class="link"><a href="#">Om Mig</a></div>
-                <div class="link"><a href="#">Repo</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Arbetslivserfarenheter</a></div>
-                <div class="link contact-btn"><a href="#">Kontakt Info</a></div>
+                </div>
             </div>
         </div>
-        <i class="fa-solid fa-bars hamburg"></i>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Hem</a>
-                <a href="">Om Mig</a>
-                <a href="">Repo</a>
-                <a href="">Skills</a>
-                <a href="">Arbetslivserfarenheter</a>
-                <a href="">Kontakt Info</a>
-                <i class="fa-solid fa-xmark cancel"></i>
-            </div>
-        </div>
-        <section>
-            <div id="profilePosition">
-                <div id="profileContainer">
-                    <img src="image/Tania.jpg" alt="Bild på mig">
-                </div>  
-            </div>
-            <div class="content">
-                <h1>Hej! <span>Det här är Fatema Afroza</span></h1>
-                <div class="typewriter">Jag är<span></span></div>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="/image/Tania.jpg" alt="Foto på mig">
                 </div>
             </div>
 
-        </section>
-    </nav>
+        </div>
+    </section>
     
 </body>
 </html>

@@ -1,1 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #1f242d;
+}
+a {
+    color: #fff;
+    /*Tar bort understrik i länker, visas som vanlig text*/
+    text-decoration: none;
+}
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*width 100% gör att det täcker hela skärm*/
+    width: 100%;
+    padding: 25px 9%;
+    /*background: slateblue; Navigation bar color, used to style*/ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*z-index 100: visar navbar alltid framför*/
+    z-index: 100;
+}
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: cornflowerblue;
+
+}
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.home-info h1 {
+    font-size: 55px;  
+}
+.home-info h2 {
+    font-size: 32px;
+    margin-top: -10px;
+}
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;  
+}
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px cornflowerblue;
+    font-size: 16px;
+    color: bisque;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover {
+    background: transparent;
+    color: cornflowerblue;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci {
+    margin-left: 30px;
+}
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: cornflowerblue;
+    margin: 0 8px;
+    transition: .5s;
+}
+.home-info .btn-sci .sci a:hover {
+    background: cornflowerblue;
+    color: #1f242d;
+    box-shadow: 0 0 10px cornflowerblue;
+}
+.home-img .img-box {
+    width: 32vw;
+    height: 32vw;
+    background: cornflowerblue;
+    border-radius: 50%;
+}
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img {
+    position: absolute;
+    /* Adjust top to adjust image*/
+    top: 5px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+
+}
