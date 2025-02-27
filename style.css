@@ -92,8 +92,9 @@ a {
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
+    animation-delay: calc(-4s * var(--i));
 }
-/*Filling text with solid color*/
+/*Animation för Javautvecklare texten. Filling text with solid color*/
 @keyframes fill-text {
     10%,
     100% {
@@ -142,17 +143,24 @@ a {
     margin: 0 8px;
     transition: .5s;
     position: relative;
+    pointer-events: all;
+    /*cursor: pointer;*/
 }
 .home-info .btn-sci .sci a:hover {
     background: cornflowerblue;
     color: #1f242d;
     box-shadow: 0 0 10px cornflowerblue;
+    pointer-events: all;
+}
+.home-info .btn-sci .sci a[title]:hover {
+    pointer-events: none; /* Hindrar webbläsaren från att visa den vanliga tooltipp */
+    animation: none;
 }
 /* Tooltip-stil för att visa text när muspekare är över ikonen */
-.home-info .btn-sci .sci a[title]:hover::after {
+.home-info .btn-sci .sci a:hover::after {
     content: attr(title); /* Texten från title-attributet */
     position: absolute;
-    top: -25px; /* Justera positionen */
+    top: -30px; /* Justera positionen */
     left: 50%;
     transform: translateX(-50%);
     background-color: cornflowerblue;
@@ -162,7 +170,8 @@ a {
     font-size: 12px;
     white-space: nowrap;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
+    animation: none;
 }
 .home-img .img-box {
     position: relative;
