@@ -141,11 +141,28 @@ a {
     color: cornflowerblue;
     margin: 0 8px;
     transition: .5s;
+    position: relative;
 }
 .home-info .btn-sci .sci a:hover {
     background: cornflowerblue;
     color: #1f242d;
     box-shadow: 0 0 10px cornflowerblue;
+}
+/* Tooltip-stil för att visa text när muspekare är över ikonen */
+.home-info .btn-sci .sci a[title]:hover::after {
+    content: attr(title); /* Texten från title-attributet */
+    position: absolute;
+    top: -25px; /* Justera positionen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 .home-img .img-box {
     position: relative;
