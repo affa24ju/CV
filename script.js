@@ -1,12 +1,24 @@
-// Ta bort 'title' från alla sociala länkar för att hindra browserns tooltip
-document.querySelectorAll('.sci a').forEach(link => {
-    link.addEventListener('mouseover', function() {
-        // Ta bort 'title' när man håller muspekaren över länken
-        //link.removeAttribute('title');
-    });
-    link.addEventListener('mouseleave', function() {
-        // Återställ title när muspekaren lämnar
-        //lämnar denna funktion tom för att vill inte återställa title
-        // link.setAttribute('title', 'GitHub'); 
-    });
-});
+const info1 = document.getElementById("info1")
+
+fetch("info.json")
+  .then(res => res.json())
+  .then(data => {
+    const parts = Object.keys(data);  
+
+    for (let i = 0; i < parts.length; i++) {
+      const part = parts[i];
+      const textInnehåll = data[part][0]; 
+
+      info1.insertAdjacentHTML(
+        "beforeend",
+        `<div class="home-info">
+           <p>${textInnehåll}</p>
+         </div>`
+      );
+
+      // Om det inte är sista elementet, bryt rad
+      if (i < parts.length - 1) {
+        info1.insertAdjacentHTML("beforeend", "<br>");
+      }
+    }
+  });
