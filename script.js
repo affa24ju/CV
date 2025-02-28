@@ -1,5 +1,6 @@
 const info1 = document.getElementById("info1")
 
+
 fetch("info.json")
   .then(res => res.json())
   .then(data => {
@@ -22,3 +23,23 @@ fetch("info.json")
       }
     }
   });
+
+  fetch("experiences.json")
+    .then(res => res.json())
+    .then(data => {
+        const experienceList = document.getElementById("experience-list");
+
+        data.forEach(item => {
+            const experienceCard = document.createElement('div');
+            experienceCard.classList.add('experience-card');
+
+            experienceCard.innerHTML = `
+            <h3>${item.title}</h3>
+            <p class="company">${item.company}</p>
+            <p><strong>Tid:</strong> ${item.duration}</p>
+            <p>${item.description}</p>
+      `;
+        experienceList.appendChild(experienceCard);
+        });
+    })
+    .catch(error => console.error('Det gick inte att hämta erfarenheter:', error));
