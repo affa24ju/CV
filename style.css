@@ -117,6 +117,9 @@ a {
     font-size: 16px;
     margin: 10px 0 25px;  
 }
+.home-info a.mail {
+    text-decoration: underline !important;
+}
 .home-info .btn-sci {
     display: flex;
     align-items: center;
