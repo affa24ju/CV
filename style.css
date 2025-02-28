@@ -248,43 +248,82 @@ a {
     align-items: flex-start;
     padding: 50px;
     gap: 40px;
-  }
-  
+}  
 .experience-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-  
 .experience-list {
     display: flex;
     flex-direction: column;
     gap: 20px; /* Avstånd mellan varje erfarenhet */
-}
-  
+}  
 .experience-card {
-    background-color: cornflowerblue;
+    background-color: #2b3a47;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-  
+}  
 .experience-card:hover {
     transform: translateY(-5px); /* Ger en lätt upplyftning vid hover */
-}
-  
+}  
 .experience-card h3 {
-    font-size: 24px;
+    font-size: 20px;
+    color: cornflowerblue;
     margin-bottom: 10px;
-}
-  
+}  
 .experience-card p {
     font-size: 16px;
     margin-bottom: 5px;
-}
-  
+}  
 .experience-card .company {
     font-weight: bold;
+}
+/*Style för skills sidan*/
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skill-category {
+    flex: 1;
+    min-width: 200px;
+    background-color: #2b3a47;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.skill-category h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: cornflowerblue;
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+}
+.skill-category ul {
+    list-style: none;
+}
+.skill-category li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+/* För responsiv design: justerar textstorleken på rubriken på mindre skärmar */
+@media (max-width: 768px) {
+    .skill-category h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-category h3 {
+        font-size: 14px;
+    }
 }

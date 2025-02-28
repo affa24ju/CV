@@ -1,0 +1,33 @@
+{
+    "programmingLanguages": [
+      "Java", "JavaScript"
+    ],
+    "frameworks": [
+      "Spring Boot", "Quarkus"
+    ],
+    "webDevelopment": [
+      "HTML/CSS", "Bootstrap", "Node.js"
+    ],
+    "databaseManagement": [
+      "MySQL", "PostgreSQL"
+    ],
+    "versionControl": [
+      "Git", "GitHub"
+    ],
+    "uiUxDesign": [
+      "Figma"
+    ],
+    "toolsAndLibraries": [
+      "Docker"
+    ],
+    "testing": [
+      "Unit testing med JUnit"
+    ],
+    "projectManagement": [
+      "Scrum", "Kanban", "GitHub Projects"
+    ],
+    "communication": [
+      "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
+    ]
+  }
+  
