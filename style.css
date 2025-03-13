@@ -60,13 +60,13 @@ a {
 }
 .home-info h1 {
     font-size: 55px;
-    margin-top: 25px;  
+    margin-top: 5px;  
 }
 .home-info h2 {
     display: inline-block;
     font-size: 32px;
-    margin-top: -10px;
-    margin-bottom: 25px;    
+    margin-top: 0; /*-10px*/
+    margin-bottom: 0;/*25px;*/    
 }
 .home-info h2 span {
     position: relative;
@@ -315,6 +315,48 @@ a {
     margin-bottom: 10px;
     color: #ddd;
 }
+/*Style för certifikat sidan*/
+.certificate {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 40px;
+}
+.certificate-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.certificate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*Avstånd mellan verje certifikat*/
+}
+.certificate-card {
+    background-color: #2b3a47;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transfor 0.3s ease;
+}
+.certificate-card:hover {
+    transform: translateY(-5px); /*Ger lätt upplyftning vid hover*/
+}
+.certificate-card h3 {
+    font-size: 20px;
+    color: cornflowerblue;
+    margin-bottom: 10px;
+}
+.certificate-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.certificate-card .company {
+    font-weight: bold;
+}
+
 /* För responsiv design: justerar textstorleken på rubriken på mindre skärmar */
 @media (max-width: 768px) {
     .skill-category h3 {

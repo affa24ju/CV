@@ -92,3 +92,41 @@ fetch("info.json")
             }
         })
         .catch(error => console.error('Det gick inte att hämta färdigheter: ', error));
+
+//Script för utbildning sidan
+document.addEventListener("DOMContentLoaded", ()=> {
+  //Läser data från json fil
+  fetch('certificates.json')
+    .then(response => response.json())
+    .then(data => {
+      const certificateList = document.getElementById('certificate-list');
+
+      //Lägger till utbildningar
+      data.education.forEach(item => {
+        const certificateCard = document.createElement('div');
+        certificateCard.classList.add('certificate-card');
+        certificateCard.innerHTML = `
+            <h3>${item.degree}</h3>
+            <p><strong>Institution:</strong> ${item.institution}</p>
+            <p><strong>År:</strong> ${item.year}</p>
+            <p>${item.description}</p>
+          `;
+          certificateList.appendChild(certificateCard);
+
+      });
+
+      //Lägger till certifikat
+      data.certificates.forEach(item => {
+        const certificateCard = document.createElement('div');
+        certificateCard.classList.add('certificate-card');
+        certificateCard.innerHTML = `
+          <h3>${item.title}</h3>
+          <p><strong>Utfärdare:</strong> ${item.issuer}</p>
+          <p><strong>År:</strong> ${item.year}</p>
+          <p>${item.description}</p>
+        `;
+        certificateList.appendChild(certificateCard);
+      });
+    })
+    .catch(error => console.error('Fel vid laddning av certifikater: ', error));
+});

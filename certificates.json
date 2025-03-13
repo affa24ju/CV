@@ -1,0 +1,30 @@
+{
+  "education": [
+    {
+      "degree": "Javautvecklare",
+      "institution": "Jönköping University",
+      "year": "Pågående",
+      "description": "Distansutbildning för att lära sig webbutveckling, inklusive HTML, CSS, JavaScript och responsiv design."
+    },
+    {
+      "degree": "Kandidatexamen i Datavetenskape",
+      "institution": "National University, Dhaka, Bangladesh",
+      "year": "2002",
+      "description": "En fyraårig utbildning inom datavetenskap, fokuserad på programmering och mjukvaruutveckling."
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Certified Java Developer",
+      "issuer": "Oracle",
+      "year": "2023",
+      "description": "Certifiering som Javautvecklare från Oracle."
+    },
+    {
+      "title": "Front-End Web Development Certificate",
+      "issuer": "freeCodeCamp",
+      "year": "2021",
+      "description": "Certifikat för front-end webbutveckling, inklusive JavaScript, React och andra moderna teknologier."
+    }
+  ]
+}
