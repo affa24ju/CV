@@ -15,16 +15,28 @@
   ],
   "certificates": [
     {
-      "title": "Certified Java Developer",
-      "issuer": "Oracle",
-      "year": "2023",
-      "description": "Certifiering som Javautvecklare från Oracle."
+      "title": "Undersköterska",
+      "issuer": "MOA, Kommunal Vuxenutbildning",
+      "year": "2020",
+      "description": "Läste bland annat Medicin, Psykologi, Akutsjkvård och Hemsjukvård"
     },
     {
-      "title": "Front-End Web Development Certificate",
-      "issuer": "freeCodeCamp",
-      "year": "2021",
-      "description": "Certifikat för front-end webbutveckling, inklusive JavaScript, React och andra moderna teknologier."
+      "title": "Web Developer",
+      "issuer": "World Wide Web Institute",
+      "year": "2005",
+      "description": "Certifikat för front-end webbutveckling med ASP, PHP, MySQL, Java"
+    },
+    {
+      "title": "Web Designer",
+      "issuer": "World Wide Web Institute",
+      "year": "2005",
+      "description": "Diptom för webbdesigning med HTML, CSS, Dreavweaver, JavaScript"
+    },
+    {
+      "title": "General English, Intermediate 2",
+      "issuer": "The British Council",
+      "year": "2002",
+      "description": "Certifikat för engelska språk"
     }
   ]
 }
