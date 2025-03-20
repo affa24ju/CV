@@ -7,7 +7,7 @@
       "description": "Distansutbildning för att lära sig webbutveckling, inklusive HTML, CSS, JavaScript och responsiv design."
     },
     {
-      "degree": "Kandidatexamen i Datavetenskape",
+      "degree": "Kandidatexamen i Datavetenskap",
       "institution": "National University, Dhaka, Bangladesh",
       "year": "2002",
       "description": "En fyraårig utbildning inom datavetenskap, fokuserad på programmering och mjukvaruutveckling."
@@ -16,7 +16,7 @@
   "certificates": [
     {
       "title": "Undersköterska",
-      "issuer": "MOA, Kommunal Vuxenutbildning",
+      "issuer": "MOA Lärcentrum, Kommunal Vuxenutbildning",
       "year": "2020",
       "description": "Läste bland annat Medicin, Psykologi, Akutsjkvård och Hemsjukvård"
     },
