@@ -369,3 +369,177 @@ a {
         font-size: 14px;
     }
 }
+/*För padda och andra mindre skärm*/
+@media (max-width: 768px) {
+    .hamburger {
+        /*Gör hamburger ikon synlig på små skärmar*/
+        display: flex;
+    }
+    /*Döljer menyn på små skärmar tills hamburger-menyn är aktiv*/
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 10;
+    }
+    /*När menyn är aktiv, dvs. när klickar på hamburger ikonen*/
+    .navbar ul.active {
+        display: flex;
+    }
+    /*Justera navbaren på små skärmar*/
+    .navbar {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul li {
+        margin: 10px 0; /*Avstånd mellan meny alternativ*/
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    .home {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+    .home-info h1 {
+        font-size: 40px;
+    }
+    .home-info h2 {
+        font-size: 24px;
+    }
+    .home-info p {
+        font-size: 14px;
+    }
+    .home-img .img-box {
+        width: 60vw;
+        height: 60vw;
+    }
+    .home-info .btn-sci .sci {
+        margin-left: 20px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar ul li {
+        margin-left: 0;
+    }
+    .navbar ul li a {
+        font-size: 18px;
+    }
+}
+/*För små skärmar t.ex mobil*/
+@media (max-width: 480px) {
+    body {
+        padding: 100px;
+    }
+    .home-info h1 {
+        font-size: 30px;
+    }
+    .home-info h2 {
+        font-size: 20px;
+    }
+    .home-info p {
+        font-size: 12px;
+    }
+    .home-img .img-box {
+        width: 80vw;
+        height: 80vw;
+    }
+    .navbar {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .navbar ul li {
+        margin-left: 0;
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    /*Anpassar home sektionen*/
+    .home {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+    .home-info h1 {
+        font-size: 30px;
+    }
+    .home-info h2 {
+        font-size: 20px;
+    }
+    .home-info p {
+        font-size: 12px;
+    }
+    /*Anpassar bildstorleken på mobil*/
+    .home-img .img-box {
+        width: 80vw;
+        height: 80vw;
+    }
+    .home-info .btn-sci .sci {
+        margin-left: 20px;
+    }
+    .btn {
+        padding: 8px 20px;
+    }
+}
+/*Anpassa image*/
+@media (max-width: 320px) {
+    .home-info h1 {
+        font-size: 25px;
+    }
+    .home-info h2 {
+        font-size: 18px;
+    }
+    .home-info p {
+        font-size: 10px;
+    }
+    .home-img .img-box {
+        width: 90vw;
+        height: 90vw;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+}
+/*Hamburger meny design*/
+.hamburger {
+    display: none; /* Visas endast på små skärmar */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px; /* Standardläge för större skärmar */
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a {
+    font-size: 18px;
+}
+
+

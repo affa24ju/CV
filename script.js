@@ -130,3 +130,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
     })
     .catch(error => console.error('Fel vid laddning av certifikater: ', error));
 });
+//Funktion för hamburger-meny
+function toggleMenu(){
+  const menu = document.querySelector('.navbar ul');
+  menu.classList.toggle('active'); //växlar mellan visa/ dölj meny
+}
