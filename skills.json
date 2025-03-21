@@ -6,7 +6,7 @@
       "Spring Boot", "Quarkus"
     ],
     "webDevelopment": [
-      "HTML/CSS", "Bootstrap", "Node.js"
+      "HTML/CSS", "Bootstrap", "Node.js", "REST API"
     ],
     "databaseManagement": [
       "MySQL", "PostgreSQL"
