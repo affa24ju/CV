@@ -14,6 +14,7 @@ a {
     /*Tar bort understrik i länker, visas som vanlig text*/
     text-decoration: none;
 }
+/*Style för navbar*/
 .navbar {
     position: fixed;
     left: 0;
@@ -21,19 +22,21 @@ a {
     /*width 100% gör att det täcker hela skärm*/
     width: 100%;
     padding: 25px 9%;
-    /*background: slateblue; Navigation bar color, used to style*/ 
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*z-index 100: visar navbar alltid framför*/
     z-index: 100;
 }
+/*Style för logo/portfölj*/
 .navbar .logo {
     font-size: 30px;
     font-weight: 700;
 }
+/*Meny på vanliga skärmar*/
 .navbar ul {
     display: flex;
+    gap: 20px;
 }
 .navbar ul li {
     list-style: none;
@@ -48,6 +51,19 @@ a {
 .navbar ul li.active a {
     color: cornflowerblue;
 
+}
+/*För att visa hamburger ikonen*/
+.hamburger {
+    display: none; /* Visas endast på små skärmar */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
 }
 .home {
     display: flex;
@@ -363,7 +379,6 @@ a {
         font-size: 16px;
     }
 }
-
 @media (max-width: 480px) {
     .skill-category h3 {
         font-size: 14px;
@@ -371,15 +386,12 @@ a {
 }
 /*För padda och andra mindre skärm*/
 @media (max-width: 768px) {
-    .hamburger {
-        /*Gör hamburger ikon synlig på små skärmar*/
-        display: flex;
-    }
+
     /*Döljer menyn på små skärmar tills hamburger-menyn är aktiv*/
     .navbar ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #2b3a47;
         width: 100%;
         text-align: center;
         padding: 20px 0;
@@ -390,6 +402,10 @@ a {
     }
     /*När menyn är aktiv, dvs. när klickar på hamburger ikonen*/
     .navbar ul.active {
+        display: flex;
+    }
+    .hamburger {
+        /*Gör hamburger ikon synlig på små skärmar*/
         display: flex;
     }
     /*Justera navbaren på små skärmar*/
@@ -436,40 +452,19 @@ a {
         font-size: 18px;
     }
 }
+/*För att visa menyn på vanliga skärmar och dölja hamburger menyn*/
+@media (min-width: 769px) {
+    .navbar ul {
+        display: flex;  /* Menyn är synlig på större skärmar */
+    }
+    .hamburger {
+        display: none;  /* Döljer hamburger-ikonen */
+    }
+}
 /*För små skärmar t.ex mobil*/
 @media (max-width: 480px) {
     body {
         padding: 100px;
-    }
-    .home-info h1 {
-        font-size: 30px;
-    }
-    .home-info h2 {
-        font-size: 20px;
-    }
-    .home-info p {
-        font-size: 12px;
-    }
-    .home-img .img-box {
-        width: 80vw;
-        height: 80vw;
-    }
-    .navbar {
-        padding: 10px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul {
-        flex-direction: column;
-        gap: 8px;
-        padding: 0;
-        margin-top: 10px;
-    }
-    .navbar ul li {
-        margin-left: 0;
-    }
-    .navbar ul li a {
-        font-size: 16px;
     }
     /*Anpassar home sektionen*/
     .home {
@@ -490,6 +485,21 @@ a {
     .home-img .img-box {
         width: 80vw;
         height: 80vw;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .navbar ul li {
+        margin-left: 0;
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    .navbar {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .home-info .btn-sci .sci {
         margin-left: 20px;
@@ -518,28 +528,6 @@ a {
         padding: 6px 15px;
     }
 }
-/*Hamburger meny design*/
-.hamburger {
-    display: none; /* Visas endast på små skärmar */
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-.hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-}
-.navbar ul {
-    display: flex;
-    gap: 20px; /* Standardläge för större skärmar */
-}
-.navbar ul li {
-    list-style: none;
-}
-.navbar ul li a {
-    font-size: 18px;
-}
+
 
 
