@@ -1,7 +1,7 @@
 # CV
 Det här är en portföljsidan, för mig själv.
 
-#Byggds med
+# Byggds med
 - HTML
 - CSS
 - JavaScript
