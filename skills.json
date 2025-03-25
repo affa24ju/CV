@@ -18,7 +18,7 @@
       "Figma"
     ],
     "toolsAndLibraries": [
-      "Docker"
+      "Docker", "Swagger"
     ],
     "testing": [
       "Unit testing med JUnit"
