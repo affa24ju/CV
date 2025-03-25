@@ -28,6 +28,9 @@
     ],
     "communication": [
       "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
+    ],
+    "ongoing": [
+      "React", "Angular", "Microservice", "SPA"
     ]
    
   }
