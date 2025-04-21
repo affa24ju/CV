@@ -1,6 +1,6 @@
 {
     "programmingLanguages": [
-      "Java", "JavaScript"
+      "Java", "JavaScript", "TypeScript"
     ],
     "frameworks": [
       "Spring Boot", "Quarkus"
@@ -9,7 +9,7 @@
       "HTML/CSS", "Bootstrap", "Node.js", "REST API"
     ],
     "databaseManagement": [
-      "MySQL", "PostgreSQL"
+      "MySQL", "PostgreSQL", "MongoDb"
     ],
     "versionControl": [
       "Git", "GitHub"
