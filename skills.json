@@ -2,14 +2,14 @@
     "programmingLanguages": [
       "Java", "JavaScript", "TypeScript"
     ],
-    "frameworks": [
-      "Spring Boot", "Quarkus"
+    "backendDevelopment": [
+      "Spring Boot", "Maven", "Quarkus", "Jakarta EE", "Node.js", "REST API", "Microservices","Spring Security"
     ],
-    "webDevelopment": [
-      "HTML/CSS", "Bootstrap", "Node.js", "REST API"
+    "frontendDevelopment": [
+      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "SPA (Single Page Application)"
     ],
     "databaseManagement": [
-      "MySQL", "PostgreSQL", "MongoDb"
+      "MySQL", "PostgreSQL", "MongoDB (inkl. MongoDB Atlas)"
     ],
     "versionControl": [
       "Git", "GitHub"
@@ -18,7 +18,7 @@
       "Figma"
     ],
     "toolsAndLibraries": [
-      "Docker", "Swagger"
+      "Docker", "Swagger", "Postman"
     ],
     "testing": [
       "Unit testing med JUnit"
@@ -29,8 +29,8 @@
     "communication": [
       "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
     ],
-    "ongoing": [
-      "React", "Angular", "Microservice", "SPA"
+    "nextCourse": [
+      "Avancerad backend-utveckling", "Distribuerade/eventbaserade system", "Docker, Kubernetes och automatiserad distribution", "Analys av javakod", "Javautveckling och koppling till andra tekniker som exempelvis IoT och AI" 
     ]
    
   }

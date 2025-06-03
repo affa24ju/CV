@@ -1,533 +1,540 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-body{
-    background: #1f242d;
+body {
+  background: #1f242d;
 }
 a {
-    color: #fff;
-    /*Tar bort understrik i länker, visas som vanlig text*/
-    text-decoration: none;
+  color: #fff;
+  /*Tar bort understrik i länker, visas som vanlig text*/
+  text-decoration: none;
 }
 /*Style för navbar*/
 .navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    /*width 100% gör att det täcker hela skärm*/
-    width: 100%;
-    padding: 25px 9%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*z-index 100: visar navbar alltid framför*/
-    z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /*width 100% gör att det täcker hela skärm*/
+  width: 100%;
+  padding: 25px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*z-index 100: visar navbar alltid framför*/
+  z-index: 100;
 }
 /*Style för logo/portfölj*/
 .navbar .logo {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 /*Meny på vanliga skärmar*/
 .navbar ul {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 .navbar ul li {
-    list-style: none;
-    margin-left: 35px;
+  list-style: none;
+  margin-left: 35px;
 }
 .navbar ul li a {
-    font-size: 20px;
-    font-weight: 500;
-    transition: .5s;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
 }
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: cornflowerblue;
-
+  color: cornflowerblue;
 }
 /*För att visa hamburger ikonen*/
 .hamburger {
-    display: none; /* Visas endast på små skärmar */
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+  display: none; /* Visas endast på små skärmar */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
 }
 .hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
 }
 .home {
-    display: flex;
-    align-items: center;
-    /*gap between image & text*/
-    gap: 70px;
-    height: 100vh;
-    padding: 230px 9% 0;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  /*gap between image & text*/
+  gap: 70px;
+  height: 100vh;
+  padding: 230px 9% 0;
+  color: #fff;
 }
 .home-info h1 {
-    font-size: 55px;
-    margin-top: 5px;  
+  font-size: 55px;
+  margin-top: 5px;
 }
 .home-info h2 {
-    display: inline-block;
-    font-size: 32px;
-    margin-top: 0; /*-10px*/
-    margin-bottom: 0;/*25px;*/    
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 0; /*-10px*/
+  margin-bottom: 0; /*25px;*/
 }
 .home-info h2 span {
-    position: relative;
-    display: inline-block;
-    color: transparent;
-    /*Text, Javautvecklare design*/
-    -webkit-text-stroke: .7px cornflowerblue;
-    animation: display-text 11s linear infinite;
-    animation-delay: calc(-4s * var(--i));
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  /*Text, Javautvecklare design*/
+  -webkit-text-stroke: 0.7px cornflowerblue;
+  animation: display-text 11s linear infinite;
+  animation-delay: calc(-4s * var(--i));
 }
 /*Tar bort animation från Javautvecklare*/
-.home-info h2 span[data-text="Javautvecklare"] {
-    color: cornflowerblue;
-    -webkit-text-stroke: none;
-    animation: none;
+.home-info h2 span[data-text='Javautvecklare'] {
+  color: cornflowerblue;
+  -webkit-text-stroke: none;
+  animation: none;
 }
 /* h2 animation*/
 @keyframes display-text {
-    25%,
-    100% {
-        display: none;
-    }
-
+  25%,
+  100% {
+    display: none;
+  }
 }
 .home-info h2 span::before {
-    content: attr(data-text);
-    position: absolute;
-    width: 0;
-    border-right: 2px solid cornflowerblue;
-    color: cornflowerblue;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: fill-text 4s linear infinite;
-    animation-delay: calc(-4s * var(--i));
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  border-right: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fill-text 4s linear infinite;
+  animation-delay: calc(-4s * var(--i));
 }
 /*Animation för Javautvecklare texten. Filling text with solid color*/
 @keyframes fill-text {
-    10%,
-    100% {
-        width: 0;
-    }
-        70%,
-        90% {
-            width: 100%;
-        }
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 .home-info p {
-    font-size: 16px;
-    margin: 10px 0 25px;  
+  font-size: 16px;
+  margin: 10px 0 25px;
 }
 .home-info a.mail {
-    text-decoration: underline !important;
+  text-decoration: underline !important;
 }
 .home-info .btn-sci {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background: rgb(49, 88, 160);
-    border: 2px solid cornflowerblue;
-    border-radius: 40px;
-    box-shadow: 0 0 5px cornflowerblue;
-    font-size: 16px;
-    color: bisque;
-    font-weight: 600;
-    transition: .5s;
+  display: inline-block;
+  padding: 10px 30px;
+  background: rgb(49, 88, 160);
+  border: 2px solid cornflowerblue;
+  border-radius: 40px;
+  box-shadow: 0 0 5px cornflowerblue;
+  font-size: 16px;
+  color: bisque;
+  font-weight: 600;
+  transition: 0.5s;
 }
 .btn:hover {
-    background: transparent;
-    color: cornflowerblue;
-    box-shadow: none;
+  background: transparent;
+  color: cornflowerblue;
+  box-shadow: none;
 }
 .home-info .btn-sci .sci {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 .home-info .btn-sci .sci a {
-    display: inline-flex;
-    padding: 8px;
-    border: 2px solid cornflowerblue;
-    border-radius: 50%;
-    font-size: 20px;
-    color: cornflowerblue;
-    margin: 0 8px;
-    transition: .5s;
-    position: relative;
-    pointer-events: all;
-    /*cursor: pointer;*/
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid cornflowerblue;
+  border-radius: 50%;
+  font-size: 20px;
+  color: cornflowerblue;
+  margin: 0 8px;
+  transition: 0.5s;
+  position: relative;
+  pointer-events: all;
+  /*cursor: pointer;*/
 }
 .home-info .btn-sci .sci a:hover {
-    background: cornflowerblue;
-    color: #1f242d;
-    box-shadow: 0 0 10px cornflowerblue;
-    pointer-events: all;
+  background: cornflowerblue;
+  color: #1f242d;
+  box-shadow: 0 0 10px cornflowerblue;
+  pointer-events: all;
 }
 .home-info .btn-sci .sci a[title]:hover {
-    pointer-events: none; /* Hindrar webbläsaren från att visa den vanliga tooltipp */
-    animation: none;
+  pointer-events: none; /* Hindrar webbläsaren från att visa den vanliga tooltipp */
+  animation: none;
 }
 /* Tooltip-stil för att visa text när muspekare är över ikonen */
 .home-info .btn-sci .sci a:hover::after {
-    content: attr(title); /* Texten från title-attributet */
-    position: absolute;
-    top: -30px; /* Justera positionen */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: cornflowerblue;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    animation: none;
+  content: attr(title); /* Texten från title-attributet */
+  position: absolute;
+  top: -30px; /* Justera positionen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  animation: none;
 }
 .home-img .img-box {
-    position: relative;
-    width: 32vw;
-    height: 32vw;
-    /*background: cornflowerblue; blue circle around img*/
-    border-radius: 50%;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  width: 32vw;
+  height: 32vw;
+  /*background: cornflowerblue; blue circle around img*/
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .home-img .img-box::before,
 .home-img .img-box::after {
-    content: '';
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    /* Green border runt image*/
-    background: conic-gradient(transparent, transparent, transparent, #7cf03d);
-    transform: rotate(0deg);
-    animation: rotate-border 10s linear infinite;
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  /* Green border runt image*/
+  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  transform: rotate(0deg);
+  animation: rotate-border 10s linear infinite;
 }
 /*Visar 2 cirklar runt image*/
 .home-img .img-box::after {
-    animation-delay: -5s;
+  animation-delay: -5s;
 }
 @keyframes rotate-border {
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .home-img .img-box .img-item {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #1f242d;
-    border-radius: 50%;
-    border: .1px solid #1f242d;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  border-radius: 50%;
+  border: 0.1px solid #1f242d;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
 }
 .home-img .img-box .img-item img {
-    position: absolute;
-    /* Adjust top to adjust image*/
-    top: 5px;
-    left: 7px;
-    display: block;
-    width: 85%;
-    object-fit: cover;
-    /*mix-blend-mode: lighten;*/
-    mix-blend-mode:normal;
-
+  position: absolute;
+  /* Adjust top to adjust image*/
+  top: 5px;
+  left: 7px;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  /*mix-blend-mode: lighten;*/
+  mix-blend-mode: normal;
+}
+/*Style för list i aboutMe sidan*/
+.tech-stack-list {
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px; /* Avstånd mellan varje teknik */
+  padding: 20px;
+}
+.tech-stack-list li {
+  background-color: #2b3a47;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 /*Style för experience sida*/
 .experience {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px;
-    gap: 40px;
-}  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
+}
 .experience-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Avstånd mellan varje erfarenhet */
-}  
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Avstånd mellan varje erfarenhet */
+}
 .experience-card {
-    background-color: #2b3a47;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}  
+  background-color: #2b3a47;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 .experience-card:hover {
-    transform: translateY(-5px); /* Ger en lätt upplyftning vid hover */
-}  
+  transform: translateY(-5px); /* Ger en lätt upplyftning vid hover */
+}
 .experience-card h3 {
-    font-size: 20px;
-    color: cornflowerblue;
-    margin-bottom: 10px;
-}  
+  font-size: 20px;
+  color: cornflowerblue;
+  margin-bottom: 10px;
+}
 .experience-card p {
-    font-size: 16px;
-    margin-bottom: 5px;
-}  
+  font-size: 16px;
+  margin-bottom: 5px;
+}
 .experience-card .company {
-    font-weight: bold;
+  font-weight: bold;
 }
 /*Style för skills sidan*/
 .skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .skill-category {
-    flex: 1;
-    min-width: 200px;
-    background-color: #2b3a47;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 10px;
+  flex: 1;
+  min-width: 200px;
+  background-color: #2b3a47;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 .skill-category h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    color: cornflowerblue;
-    word-wrap: break-word;
-    white-space: normal;
-    word-break: break-word;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: cornflowerblue;
+  word-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
 }
 .skill-category ul {
-    list-style: none;
+  list-style: none;
 }
 .skill-category li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #ddd;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ddd;
 }
 /*Style för certifikat sidan*/
 .certificate {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 40px;
 }
 .certificate-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .certificate-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /*Avstånd mellan verje certifikat*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /*Avstånd mellan verje certifikat*/
 }
 .certificate-card {
-    background-color: #2b3a47;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transfor 0.3s ease;
+  background-color: #2b3a47;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transfor 0.3s ease;
 }
 .certificate-card:hover {
-    transform: translateY(-5px); /*Ger lätt upplyftning vid hover*/
+  transform: translateY(-5px); /*Ger lätt upplyftning vid hover*/
 }
 .certificate-card h3 {
-    font-size: 20px;
-    color: cornflowerblue;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: cornflowerblue;
+  margin-bottom: 10px;
 }
 .certificate-card p {
-    font-size: 16px;
-    margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 .certificate-card .company {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* För responsiv design: justerar textstorleken på rubriken på mindre skärmar */
 @media (max-width: 768px) {
-    .skill-category h3 {
-        font-size: 16px;
-    }
+  .skill-category h3 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 480px) {
-    .skill-category h3 {
-        font-size: 14px;
-    }
+  .skill-category h3 {
+    font-size: 14px;
+  }
 }
 /*För padda och andra mindre skärm*/
 @media (max-width: 768px) {
-
-    /*Döljer menyn på små skärmar tills hamburger-menyn är aktiv*/
-    .navbar ul {
-        display: none;
-        flex-direction: column;
-        background-color: #2b3a47;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        z-index: 10;
-    }
-    /*När menyn är aktiv, dvs. när klickar på hamburger ikonen*/
-    .navbar ul.active {
-        display: flex;
-    }
-    .hamburger {
-        /*Gör hamburger ikon synlig på små skärmar*/
-        display: flex;
-    }
-    /*Justera navbaren på små skärmar*/
-    .navbar {
-        padding: 10px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul li {
-        margin: 10px 0; /*Avstånd mellan meny alternativ*/
-    }
-    .navbar ul li a {
-        font-size: 16px;
-    }
-    .home {
-        flex-direction: column;
-        gap: 30px;
-        padding: 40px 5%;
-    }
-    .home-info h1 {
-        font-size: 40px;
-    }
-    .home-info h2 {
-        font-size: 24px;
-    }
-    .home-info p {
-        font-size: 14px;
-    }
-    .home-img .img-box {
-        width: 60vw;
-        height: 60vw;
-    }
-    .home-info .btn-sci .sci {
-        margin-left: 20px;
-    }
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .navbar ul li {
-        margin-left: 0;
-    }
-    .navbar ul li a {
-        font-size: 18px;
-    }
+  /*Döljer menyn på små skärmar tills hamburger-menyn är aktiv*/
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #2b3a47;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+  }
+  /*När menyn är aktiv, dvs. när klickar på hamburger ikonen*/
+  .navbar ul.active {
+    display: flex;
+  }
+  .hamburger {
+    /*Gör hamburger ikon synlig på små skärmar*/
+    display: flex;
+  }
+  /*Justera navbaren på små skärmar*/
+  .navbar {
+    padding: 10px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul li {
+    margin: 10px 0; /*Avstånd mellan meny alternativ*/
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+  .home {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 5%;
+  }
+  .home-info h1 {
+    font-size: 40px;
+  }
+  .home-info h2 {
+    font-size: 24px;
+  }
+  .home-info p {
+    font-size: 14px;
+  }
+  .home-img .img-box {
+    width: 60vw;
+    height: 60vw;
+  }
+  .home-info .btn-sci .sci {
+    margin-left: 20px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar ul li {
+    margin-left: 0;
+  }
+  .navbar ul li a {
+    font-size: 18px;
+  }
 }
 /*För att visa menyn på vanliga skärmar och dölja hamburger menyn*/
 @media (min-width: 769px) {
-    .navbar ul {
-        display: flex;  /* Menyn är synlig på större skärmar */
-    }
-    .hamburger {
-        display: none;  /* Döljer hamburger-ikonen */
-    }
+  .navbar ul {
+    display: flex; /* Menyn är synlig på större skärmar */
+  }
+  .hamburger {
+    display: none; /* Döljer hamburger-ikonen */
+  }
 }
 /*För små skärmar t.ex mobil*/
 @media (max-width: 480px) {
-    body {
-        padding: 100px;
-    }
-    /*Anpassar home sektionen*/
-    .home {
-        flex-direction: column;
-        gap: 30px;
-        padding: 40px 5%;
-    }
-    .home-info h1 {
-        font-size: 30px;
-    }
-    .home-info h2 {
-        font-size: 20px;
-    }
-    .home-info p {
-        font-size: 12px;
-    }
-    /*Anpassar bildstorleken på mobil*/
-    .home-img .img-box {
-        width: 80vw;
-        height: 80vw;
-    }
-    .navbar ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-    .navbar ul li {
-        margin-left: 0;
-    }
-    .navbar ul li a {
-        font-size: 16px;
-    }
-    .navbar {
-        padding: 10px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .home-info .btn-sci .sci {
-        margin-left: 20px;
-    }
-    .btn {
-        padding: 8px 20px;
-    }
+  body {
+    padding: 100px;
+  }
+  /*Anpassar home sektionen*/
+  .home {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 5%;
+  }
+  .home-info h1 {
+    font-size: 30px;
+  }
+  .home-info h2 {
+    font-size: 20px;
+  }
+  .home-info p {
+    font-size: 12px;
+  }
+  /*Anpassar bildstorleken på mobil*/
+  .home-img .img-box {
+    width: 80vw;
+    height: 80vw;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .navbar ul li {
+    margin-left: 0;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+  }
+  .navbar {
+    padding: 10px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-info .btn-sci .sci {
+    margin-left: 20px;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
 }
 /*Anpassa image*/
 @media (max-width: 320px) {
-    .home-info h1 {
-        font-size: 25px;
-    }
-    .home-info h2 {
-        font-size: 18px;
-    }
-    .home-info p {
-        font-size: 10px;
-    }
-    .home-img .img-box {
-        width: 90vw;
-        height: 90vw;
-    }
-    .btn {
-        font-size: 14px;
-        padding: 6px 15px;
-    }
+  .home-info h1 {
+    font-size: 25px;
+  }
+  .home-info h2 {
+    font-size: 18px;
+  }
+  .home-info p {
+    font-size: 10px;
+  }
+  .home-img .img-box {
+    width: 90vw;
+    height: 90vw;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 6px 15px;
+  }
 }
-
-
-

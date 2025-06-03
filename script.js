@@ -23,19 +23,32 @@ fetch("info.json")
 
     for (let i = 0; i < parts.length; i++) {
       const part = parts[i];
-      const textInnehåll = data[part][0]; 
+      const content = data[part]; 
 
-      info1.insertAdjacentHTML(
-        "beforeend",
-        `<div class="home-info">
-           <p>${textInnehåll}</p>
-         </div>`
-      );
-
-      // Om det inte är sista elementet, bryt rad
-      if (i < parts.length - 1) {
-        info1.insertAdjacentHTML("beforeend", "<br>");
+      //om det är tech_stack, rendera som en lista
+      if (part === "tech_stack") { 
+        let listHtml = "<ul class='tech-stack-list'>";
+        for (let item of content) {
+          listHtml += `<li>${item}</li>`;
+        }
+        listHtml += "</ul>";
+        info1.insertAdjacentHTML("beforeend", listHtml);
+      } else {
+        // Annars rendera som en vanlig text
+        const infoContent = content[0];
+        info1.insertAdjacentHTML(
+          "beforeend",
+          `<div class="home-info">
+             <p>${infoContent}</p>
+           </div>`
+        );
+  
+        // Om det inte är sista elementet, bryt rad
+        if (i < parts.length - 1) {
+          info1.insertAdjacentHTML("beforeend", "<br>");
+        }
       }
+
     }
   })
   .catch(error => console.error('Det gick inte att hämta Om Mig info: ', error));
