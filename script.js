@@ -33,7 +33,23 @@ fetch("info.json")
         }
         listHtml += "</ul>";
         info1.insertAdjacentHTML("beforeend", listHtml);
-      } else {
+      } 
+      // Om det är senaste_projekt, visa alla rader och länkar
+      else if (part === "senaste_projekt") {
+        let projectHtml = "<div class='home-info'>";
+        for (let line of content) {
+          // Gör om länkar i texten till klickbara <a>-taggar automatiskt
+          line = line.replace(
+            /(https?:\/\/[^\s,]+)/g,
+            '<a href="$1" target="_blank" rel="noopener" class="link">$1</a>'
+          );
+          projectHtml += `<p>${line}</p>`;
+        }
+        projectHtml += "</div>";
+        info1.insertAdjacentHTML("beforeend", projectHtml);
+      }
+      
+      else {
         // Annars rendera som en vanlig text
         const infoContent = content[0];
         info1.insertAdjacentHTML(
@@ -43,7 +59,7 @@ fetch("info.json")
            </div>`
         );
   
-        // Om det inte är sista elementet, bryt rad
+        // Lägger till radbrytning mellan sektioner, förutom efter den sista
         if (i < parts.length - 1) {
           info1.insertAdjacentHTML("beforeend", "<br>");
         }

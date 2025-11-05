@@ -1,12 +1,12 @@
 {
     "programmingLanguages": [
-      "Java", "JavaScript", "TypeScript"
+      "Java", "JavaScript", "TypeScript", "Python"
     ],
     "backendDevelopment": [
-      "Spring Boot", "Maven", "Quarkus", "Jakarta EE", "Node.js", "REST API", "Microservices","Spring Security"
+      "Spring Boot", "Maven", "Quarkus", "Jakarta EE", "Node.js", "REST API", "Microservices","Spring Security", "OpenAi"
     ],
     "frontendDevelopment": [
-      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "SPA (Single Page Application)"
+      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "Angular", "SPA (Single Page Application)"
     ],
     "databaseManagement": [
       "MySQL", "PostgreSQL", "MongoDB (inkl. MongoDB Atlas)"
@@ -29,8 +29,8 @@
     "communication": [
       "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
     ],
-    "nextCourse": [
-      "Avancerad backend-utveckling", "Distribuerade/eventbaserade system", "Docker, Kubernetes och automatiserad distribution", "Analys av javakod", "Javautveckling och koppling till andra tekniker som exempelvis IoT och AI" 
+    "deploymentPlatforms": [
+      "DigitalOcean", "Render", "Railway"
     ]
    
   }
