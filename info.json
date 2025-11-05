@@ -1,11 +1,18 @@
 {
-    "part 1":["Om jag skulle beskriva mig själv med tre ord, skulle jag säga: nyfiken, mångsidig och envis."],
+    "part 1":["Nyfiken, mångsidig och målmedveten - så skulle jag beskriva mig själv."],
 
-    "part 2":["Jag är en mångsidig professionell med erfarenhet inom sjukvård, FN och utbildning. Nu söker jag nya utmaningar inom programmering."],
+    "part 2":["Jag har en bred bakgrund inom sjukvård, FN och utbildning – erfarenheter som gett mig både struktur och samarbetsförmåga. Nu fokuserar jag på att utvecklas som programmerare."],
 
-    "part 3": ["Som person är jag uppmärksam på detaljer och empatisk i samarbeten, samtidigt som jag är välstrukturerad och alltid strävar efter att vara så effektiv som möjligt."],
+    "part 3": ["Som person är jag noggrann, empatisk och trivs i team där man lär av varandra och arbetar mot gemensamma mål. Jag lär mig snabbt, ger aldrig upp och tycker att problemlösning är bland det roligaste som finns."],
+  
+    "senaste_projekt": [
+      "Mitt senaste projekt heter MindMate – en avancerad humörspårningsapp med AI-stöd. Jag byggde backend i Java med Spring Boot och integrerade OpenAI:s API för att skapa en personlig chattbot. Säkerheten hanteras med Spring Security och jag implementerade även en testbetalningslösning med Stripe Webhooks.",
+      "Frontend-delen utvecklades i Angular för att skapa ett modernt och användarvänligt gränssnitt, medan datan lagras i MongoDB. Projektet innehåller dessutom ett REST API som möjliggör smidig kommunikation mellan klient och server.",
+      "🌐 Live-demo: [MindMate på Render](https://mindmatefrontend.onrender.com)",
+      "💻 GitHub-repo backend: [MindMate API](https://github.com/affa24ju/MindMateApi.git)",
+      "💻 GitHub-repo frontend: [MindMate Frontend](https://github.com/affa24ju/MindMateFrontend.git)"
+    ],
 
-    "part 4":[" En av mina starka sidor är att jag snabbt lär mig nya saker och ger aldrig upp. Jag tycker också att det är roligt att lösa problem."],
 
     "tech_intro": [
         "Jag brinner för backendutveckling – särskilt inom Java, där jag vill fördjupa mina kunskaper och få praktisk erfarenhet av att bygga robusta och skalbara system. Mina intresseområden inkluderar:"
@@ -13,9 +20,10 @@
       "tech_stack": [
         "☕ Java & Spring Boot",
         "🔐 Spring Security",
+        "🤖 AI-integration med OpenAI",
         "🔗 REST API:er & mikrotjänstarkitektur",
         "🛢️ Databashantering (MongoDB, SQL)",
         "🐳 Docker & Git",
-        "🌐 Frontend (HTML, CSS, React, SPA)"
+        "🌐 Frontend (HTML, CSS, React, Angular, SPA)"
       ]
 }
