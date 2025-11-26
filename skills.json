@@ -6,7 +6,7 @@
       "Spring Boot", "Maven", "Quarkus", "Jakarta EE", "Node.js", "REST API", "Microservices","Spring Security", "OpenAi"
     ],
     "frontendDevelopment": [
-      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "Angular", "SPA (Single Page Application)"
+      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "Angular", "Next.Js", "SPA (Single Page Application)"
     ],
     "databaseManagement": [
       "MySQL", "PostgreSQL", "MongoDB (inkl. MongoDB Atlas)"
@@ -24,7 +24,7 @@
       "Unit testing med JUnit"
     ],
     "projectManagement": [
-      "Scrum", "Kanban", "GitHub Projects"
+      "Scrum", "Kanban", "Jira", "GitHub Projects"
     ],
     "communication": [
       "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
