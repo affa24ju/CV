@@ -15,16 +15,16 @@
       "Git", "GitHub"
     ],
     "uiUxDesign": [
-      "Figma"
+      "Figma", "Lovable"
     ],
     "toolsAndLibraries": [
-      "Docker", "Swagger", "Postman"
+      "Docker", "Swagger", "Postman", "Kaggle"
     ],
     "testing": [
       "Unit testing med JUnit"
     ],
     "projectManagement": [
-      "Scrum", "Kanban", "Jira", "GitHub Projects"
+      "Scrum", "Kanban", "Jira", "Mural", "GitHub Projects"
     ],
     "communication": [
       "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"

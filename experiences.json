@@ -2,8 +2,14 @@
   {
     "title": "Praktikant",
     "company": "RISE Research Institutes of Sweden",
+    "duration": "feb 2026 - maj 2026",
+    "description": "Arbetar med att utveckla ett verktyg för att översätta text till teckenspråk. Backend med Python och FastAPI. Frontend med Next.js., Typescript och TailWind CSS."
+  },
+  {
+    "title": "Praktikant",
+    "company": "RISE Research Institutes of Sweden",
     "duration": "nov 2025 - jan 2026",
-    "description": "Arbetar med att utveckla AI-baserade lösningar för A_Space projekt. Backend med Python och FastAPI. Frontend med Next.js."
+    "description": "Arbetar med att utveckla AI-baserade lösningar för blickienkänning. Backend med Python och FastAPI. Frontend med Next.js."
   },
   {
     "title": "Undersköterska",

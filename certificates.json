@@ -4,7 +4,7 @@
       "degree": "Javautvecklare",
       "institution": "Jönköping University",
       "year": "Pågående",
-      "description": "Tvåårig yrkesutbildning inom Javautveckling med fokus på både backend och frontend teknologier. Tar examen i juni 2026."
+      "description": "Tvåårig yrkesutbildning inom Javautveckling med fokus på både backend och frontend teknologier. Tar examen i maj 2026."
     },
     {
       "degree": "Kandidatexamen i Datavetenskap",
@@ -14,6 +14,18 @@
     }
   ],
   "certificates": [
+    {
+      "title": "Intermediate Machine Learning",
+      "issuer": "Kaggle",
+      "year": "2026",
+      "description": "Online kurs som bygger vidare på grundläggande ML-kunskper och fokuserar på praktiska problem i verkliga dataset."
+    },
+    {
+      "title": "Intro to Machine Learning",
+      "issuer": "Kaggle",
+      "year": "2025",
+      "description": "Grundläggande kurs i maskininlärning, inklusive dataförberedelse, modellering och utvärdering med Python och populära ML-bibliotek."
+    },
     {
       "title": "Undersköterska",
       "issuer": "MOA Lärcentrum, Kommunal Vuxenutbildning",

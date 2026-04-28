@@ -6,7 +6,7 @@
     "part 3": ["Som person är jag noggrann, empatisk och trivs i team där man lär av varandra och arbetar mot gemensamma mål. Jag lär mig snabbt, ger aldrig upp och tycker att problemlösning är bland det roligaste som finns."],
   
     "senaste_projekt": [
-      "Mitt senaste projekt heter MindMate – en avancerad humörspårningsapp med AI-stöd. Jag byggde backend i Java med Spring Boot och integrerade OpenAI:s API för att skapa en personlig chattbot. Säkerheten hanteras med Spring Security och jag implementerade även en testbetalningslösning med Stripe Webhooks.",
+      "Ett av mina senaste projekt heter MindMate – en avancerad humörspårningsapp med AI-stöd. Jag byggde backend i Java med Spring Boot och integrerade OpenAI:s API för att skapa en personlig chattbot. Säkerheten hanteras med Spring Security och jag implementerade även en testbetalningslösning med Stripe Webhooks.",
       "Frontend-delen utvecklades i Angular för att skapa ett modernt och användarvänligt gränssnitt, medan datan lagras i MongoDB. Projektet innehåller dessutom ett REST API som möjliggör smidig kommunikation mellan klient och server.",
       "🌐 Live-demo: [MindMate på Render](https://mindmatefrontend.onrender.com)",
       "💻 GitHub-repo backend: [MindMate API](https://github.com/affa24ju/MindMateApi.git)",
