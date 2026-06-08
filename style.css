@@ -502,13 +502,16 @@ a {
   .home {
     flex-direction: column;
     gap: 30px;
-    padding: 40px 5%;
+    padding: 80px 5% 30px;
   }
   .home-info h1 {
     font-size: 40px;
   }
   .home-info h2 {
     font-size: 24px;
+  }
+  .home-info h2.greeting {
+    font-size: 22px;
   }
   .home-info p {
     font-size: 14px;
@@ -519,6 +522,10 @@ a {
   }
   .home-info .btn-sci .sci {
     margin-left: 20px;
+  }
+  .chip {
+    font-size: 13px;
+    padding: 5px 12px;
   }
   .navbar ul {
     flex-direction: column;
@@ -542,14 +549,10 @@ a {
 }
 /*För små skärmar t.ex mobil*/
 @media (max-width: 480px) {
-  body {
-    padding: 100px;
-  }
-  /*Anpassar home sektionen*/
   .home {
     flex-direction: column;
-    gap: 30px;
-    padding: 40px 5%;
+    gap: 20px;
+    padding: 80px 5% 30px;
   }
   .home-info h1 {
     font-size: 30px;
@@ -557,8 +560,19 @@ a {
   .home-info h2 {
     font-size: 20px;
   }
+  .home-info h2.greeting {
+    font-size: 18px;
+    white-space: normal;
+  }
   .home-info p {
     font-size: 12px;
+  }
+  .info-chips {
+    gap: 8px;
+  }
+  .chip {
+    font-size: 12px;
+    padding: 4px 10px;
   }
   /*Anpassar bildstorleken på mobil*/
   .home-img .img-box {
@@ -597,6 +611,10 @@ a {
   }
   .home-info p {
     font-size: 10px;
+  }
+  .chip {
+    font-size: 11px;
+    padding: 4px 8px;
   }
   .home-img .img-box {
     width: 90vw;
