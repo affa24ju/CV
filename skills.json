@@ -21,7 +21,7 @@
       "Docker", "Swagger", "Postman", "Kaggle"
     ],
     "testing": [
-      "Unit testing med JUnit"
+      "Unit testing med JUnit", "Jest", "React Testing Library"
     ],
     "projectManagement": [
       "Scrum", "Kanban", "Jira", "Mural", "GitHub Projects"
