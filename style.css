@@ -72,18 +72,18 @@ a {
   display: flex;
   align-items: center;
   /*gap between image & text*/
-  gap: 70px;
-  height: 100vh;
-  padding: 100px 9% 0;
+  gap: 44px;
+  height: 65vh;
+  padding: 15px 9% 0;
   color: #fff;
 }
 .home-info h1 {
-  font-size: 55px;
-  margin-top: 5px;
+  font-size: 34px;
+  margin-top: 4px;
 }
 .home-info h2 {
   display: inline-block;
-  font-size: 32px;
+  font-size: 27px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -91,7 +91,7 @@ a {
   display: block;
   text-align: center;
   white-space: nowrap;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .home-info h2 .role-span {
   position: relative;
@@ -104,7 +104,8 @@ a {
 }
 /* h2 animation*/
 @keyframes display-text {
-  0%, 32% {
+  0%,
+  32% {
     display: inline-block;
   }
   33%,
@@ -135,14 +136,15 @@ a {
   }
 }
 .home-info p {
-  font-size: 16px;
-  margin: 10px 0 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 8px 0 12px;
 }
 .info-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
 }
 .chip {
   display: inline-flex;
@@ -173,8 +175,13 @@ a {
   animation: pulse-green 2s ease-in-out infinite;
 }
 @keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
-  50% { box-shadow: 0 0 0 6px rgba(76, 175, 80, 0); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(76, 175, 80, 0);
+  }
 }
 .home-info a.mail {
   text-decoration: underline !important;
@@ -245,8 +252,8 @@ a {
 }
 .home-img .img-box {
   position: relative;
-  width: 32vw;
-  height: 32vw;
+  width: 23vw;
+  height: 23vw;
   /*background: cornflowerblue; blue circle around img*/
   border-radius: 50%;
   padding: 5px;
@@ -501,11 +508,13 @@ a {
   }
   .home {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
     gap: 30px;
     padding: 80px 5% 30px;
   }
   .home-info h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
   .home-info h2 {
     font-size: 24px;
@@ -551,11 +560,13 @@ a {
 @media (max-width: 480px) {
   .home {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
     gap: 20px;
     padding: 80px 5% 30px;
   }
   .home-info h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .home-info h2 {
     font-size: 20px;
@@ -603,81 +614,81 @@ a {
 }
 /* Highlights section */
 .highlights {
-    padding: 80px 9%;
-    background: #252b37;
-    color: #fff;
-    text-align: center;
+  padding: 34px 9%;
+  background: #252b37;
+  color: #fff;
+  text-align: center;
 }
 .highlights-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: cornflowerblue;
-    margin-bottom: 50px;
+  font-size: 33px;
+  font-weight: 700;
+  color: cornflowerblue;
+  margin-bottom: 22px;
 }
 .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .highlight-card {
-    background: #1f242d;
-    border: 1.5px solid rgba(100, 149, 237, 0.2);
-    border-radius: 16px;
-    padding: 32px 24px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #1f242d;
+  border: 1.5px solid rgba(100, 149, 237, 0.2);
+  border-radius: 14px;
+  padding: 20px 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .highlight-card:hover {
-    transform: translateY(-6px);
-    border-color: cornflowerblue;
-    box-shadow: 0 8px 24px rgba(100, 149, 237, 0.2);
+  transform: translateY(-5px);
+  border-color: cornflowerblue;
+  box-shadow: 0 8px 24px rgba(100, 149, 237, 0.2);
 }
 .highlight-card--award {
-    border-color: rgba(255, 215, 0, 0.35);
+  border-color: rgba(255, 215, 0, 0.35);
 }
 .highlight-card--award:hover {
-    border-color: gold;
-    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.18);
+  border-color: gold;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.18);
 }
 .highlight-icon {
-    font-size: 48px;
-    display: block;
-    margin-bottom: 16px;
+  font-size: 34px;
+  display: block;
+  margin-bottom: 10px;
 }
 .highlight-card h3 {
-    font-size: 17px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 10px;
-    line-height: 1.4;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 9px;
+  line-height: 1.4;
 }
 .highlight-card p {
-    font-size: 14px;
-    color: #99a;
-    line-height: 1.6;
+  font-size: 14px;
+  color: #99a;
+  line-height: 1.6;
 }
 @media (max-width: 900px) {
-    .highlights-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 480px) {
-    .highlights {
-        padding: 60px 5%;
-    }
-    .highlights-title {
-        font-size: 26px;
-        margin-bottom: 32px;
-    }
-    .highlights-grid {
-        grid-template-columns: 1fr;
-    }
+  .highlights {
+    padding: 36px 5%;
+  }
+  .highlights-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /*Anpassa image*/
 @media (max-width: 320px) {
   .home-info h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .home-info h2 {
     font-size: 18px;
