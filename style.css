@@ -74,7 +74,7 @@ a {
   /*gap between image & text*/
   gap: 70px;
   height: 100vh;
-  padding: 230px 9% 0;
+  padding: 100px 9% 0;
   color: #fff;
 }
 .home-info h1 {
@@ -84,8 +84,14 @@ a {
 .home-info h2 {
   display: inline-block;
   font-size: 32px;
-  margin-top: 0; /*-10px*/
-  margin-bottom: 0; /*25px;*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.home-info h2.greeting {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 20px;
 }
 .home-info h2 .role-span {
   position: relative;
