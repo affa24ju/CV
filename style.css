@@ -391,19 +391,20 @@ a {
 .link:hover {
   text-decoration: underline;
 }
-.cert-page {
+.content-page {
   height: auto;
   min-height: 100vh;
   align-items: flex-start;
   padding-top: 110px;
   padding-bottom: 50px;
 }
-.cert-page .home-info {
+.content-page .home-info {
   width: 100%;
 }
-.cert-page .home-info h2 {
+.content-page .home-info h1,
+.content-page .home-info > h2 {
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: cornflowerblue;
 }
 
