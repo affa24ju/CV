@@ -601,6 +601,79 @@ a {
     padding: 8px 20px;
   }
 }
+/* Highlights section */
+.highlights {
+    padding: 80px 9%;
+    background: #252b37;
+    color: #fff;
+    text-align: center;
+}
+.highlights-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: cornflowerblue;
+    margin-bottom: 50px;
+}
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.highlight-card {
+    background: #1f242d;
+    border: 1.5px solid rgba(100, 149, 237, 0.2);
+    border-radius: 16px;
+    padding: 32px 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.highlight-card:hover {
+    transform: translateY(-6px);
+    border-color: cornflowerblue;
+    box-shadow: 0 8px 24px rgba(100, 149, 237, 0.2);
+}
+.highlight-card--award {
+    border-color: rgba(255, 215, 0, 0.35);
+}
+.highlight-card--award:hover {
+    border-color: gold;
+    box-shadow: 0 8px 24px rgba(255, 215, 0, 0.18);
+}
+.highlight-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+.highlight-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.highlight-card p {
+    font-size: 14px;
+    color: #99a;
+    line-height: 1.6;
+}
+@media (max-width: 900px) {
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .highlights {
+        padding: 60px 5%;
+    }
+    .highlights-title {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /*Anpassa image*/
 @media (max-width: 320px) {
   .home-info h1 {
