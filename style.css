@@ -28,10 +28,14 @@ a {
   /*z-index 100: visar navbar alltid framför*/
   z-index: 100;
 }
-/*Style för logo/portfölj*/
+/*Style för logo/namn*/
 .navbar .logo {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar .logo span {
+  color: cornflowerblue;
 }
 /*Meny på vanliga skärmar*/
 .navbar ul {
