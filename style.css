@@ -361,38 +361,66 @@ a {
 .experience-card .company {
   font-weight: bold;
 }
-/*Style för skills sidan*/
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
+/* Kompetenser page */
+.skills-section {
+  padding: 40px 9% 60px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 20px;
 }
-.skill-category {
-  flex: 1;
-  min-width: 200px;
-  background-color: #2b3a47;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-bottom: 10px;
+.skill-card {
+  background: #2b3a47;
+  border-radius: 12px;
+  padding: 22px;
+  border: 1.5px solid rgba(100, 149, 237, 0.15);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.skill-category h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: cornflowerblue;
+  box-shadow: 0 8px 24px rgba(100, 149, 237, 0.15);
+}
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.skill-card-header i {
+  font-size: 22px;
   color: cornflowerblue;
-  word-wrap: break-word;
-  white-space: normal;
-  word-break: break-word;
+  flex-shrink: 0;
 }
-.skill-category ul {
-  list-style: none;
+.skill-card-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
-.skill-category li {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ddd;
+.skill-card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-card-chips .chip {
+  font-size: 13px;
+  padding: 4px 12px;
+}
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 30px 5% 40px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 /*Style för certifikat sidan*/
 .certificate {
