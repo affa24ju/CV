@@ -92,16 +92,30 @@ fetch("info.json")
         const experienceList = document.getElementById("experience-list");
 
         data.forEach(item => {
-            const experienceCard = document.createElement('div');
-            experienceCard.classList.add('experience-card');
+            const isTech = item.category === "tech";
+            const dotClass = isTech ? "" : "timeline-dot--earlier";
+            const icon = isTech ? "bx-code-alt" : "bx-briefcase";
+            const periodClass = isTech ? "" : "timeline-period--earlier";
+            const companyClass = isTech ? "" : "timeline-company--earlier";
 
-            experienceCard.innerHTML = `
-            <h3>${item.title}</h3>
-            <p class="company">${item.company}</p>
-            <p><strong>Tid:</strong> ${item.duration}</p>
-            <p>${item.description}</p>
-      `;
-        experienceList.appendChild(experienceCard);
+            const entry = document.createElement("div");
+            entry.classList.add("timeline-item");
+            entry.innerHTML = `
+                <div class="timeline-dot ${dotClass}">
+                    <i class="bx ${icon}"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-period ${periodClass}">
+                        <i class="bx bx-calendar"></i> ${item.duration}
+                    </span>
+                    <h3>${item.title}</h3>
+                    <p class="timeline-company ${companyClass}">
+                        <i class="bx bx-buildings"></i> ${item.company}
+                    </p>
+                    <p>${item.description}</p>
+                </div>
+            `;
+            experienceList.appendChild(entry);
         });
     })
     .catch(error => console.error('Det gick inte att hämta erfarenheter:', error));

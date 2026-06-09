@@ -3,56 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erfarenheter</title>
-    <!--Länk till Boxicons css, lägga till iconer. Boxicons-> usage-> link -->
+    <title>Erfarenheter – Fatema Afroza</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Navigation bar-->
     <nav class="navbar">
         <a href="index.html" class="logo">Fatema <span>Afroza</span></a>
-        <!--Hamburger-ikon som syns bara på mindre skärmar-->
         <div class="hamburger" onclick="toggleMenu()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>        
+        </div>
         <ul>
             <li><a href="aboutMe.html">Om Mig</a></li>
             <li><a href="projects.html">Projekt</a></li>
             <li class="active"><a href="experiences.html">Erfarenheter</a></li>
             <li><a href="skills.html">Kompetenser</a></li>
             <li><a href="certificats.html">Utbildning & Certifikat</a></li>
-            <li><a href="contctInfo.html">Kontakt Info</a></li>       
+            <li><a href="contctInfo.html">Kontakt Info</a></li>
         </ul>
     </nav>
-    <!--Content section-->
+
+    <!-- Hero -->
     <section class="home content-page">
         <div class="home-info">
-            <h2>Ta en titt på mina arbetslivserfarenheter!           
-            </h2>
-            <!--Listar erfarenheter-->
-            <section class="experience">
-                <div class="experience-content">
-                    <div id="experience-list" class="experience-list">
-                        <!--Erfarenheter laddar från json fil-->
-                    </div>
-                </div>
-            </section>
-            <!--Button för att ladda ner CV-->
+            <h1>Erfarenheter</h1>
+            <p>Min karriärresa sträcker sig från internationellt arbete och sjukvård till mjukvaruutveckling. <span style="color: cornflowerblue;">●</span> Tech &nbsp;<span style="color: #8899bb;">●</span> Tidigare karriär</p>
             <div class="btn-sci">
                 <a href="pdf/CV_Fatema_Afroza.pdf" class="btn" download>Ladda ner CV</a>
-                <!--Icon för sociala medijer-->
                 <div class="sci">
-                    <!--klicka på Boxicons logo, sök för icon, klicka på icon, klicka på font, kopiera kod-->
-                    <!-- target="-blank": öppnar sidan i ny flik och title visas som tooltip -->
-                     <!--rel="noopener" gör att man inte kan nvigera från ny filken till ursprungliga fil, för säkerhertsskull -->
-                    <a id="github" href="https://github.com/affa24ju" target="_blank" rel="noopener" title="GitHub"><i class='bx bxl-github'></i></a>
-                    <a id="linkedin" href="https://www.linkedin.com/in/fatema-afroza-970b5614b/" target="_blank" rel="noopener" title="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
-                    <a id="facebook" href="https://www.facebook.com/tania.reza.180?mibextid=wwXIfr" target="_blank" rel="noopener" title="Facebook"><i class='bx bxl-facebook' ></i></a>
-                    
-
+                    <a href="https://github.com/affa24ju" target="_blank" rel="noopener" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/fatema-afroza-970b5614b/" target="_blank" rel="noopener" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/tania.reza.180?mibextid=wwXIfr" target="_blank" rel="noopener" title="Facebook"><i class='bx bxl-facebook'></i></a>
                 </div>
             </div>
         </div>
@@ -62,9 +45,16 @@
                     <img src="image\Fatema.png" alt="Foto på mig">
                 </div>
             </div>
-
         </div>
     </section>
- <script src="script.js"></script>   
+
+    <!-- Timeline -->
+    <section class="about-section">
+        <div id="experience-list" class="timeline timeline--exp">
+            <!-- Erfarenheter laddas från experiences.json -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

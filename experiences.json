@@ -3,45 +3,49 @@
     "title": "Intern - Software developer",
     "company": "RISE Research Institutes of Sweden",
     "duration": "feb 2026 - maj 2026",
-    "description": "Arbetade med att utveckla ett verktyg för att översätta text till teckenspråk. Backend med Python och FastAPI. Frontend med Next.js., Typescript och TailWind CSS."
+    "category": "tech",
+    "description": "Arbetade med att utveckla ett verktyg för att översätta text till teckenspråk. Backend med Python och FastAPI. Frontend med Next.js, Typescript och TailWind CSS."
   },
   {
     "title": "Intern - Software developer",
     "company": "RISE Research Institutes of Sweden",
     "duration": "nov 2025 - jan 2026",
-    "description": "Arbetade med att utveckla AI-baserade lösningar för blickienkänning. Backend med Python och FastAPI. Frontend med Next.js."
+    "category": "tech",
+    "description": "Arbetade med att utveckla AI-baserade lösningar för blickigenkänning. Backend med Python och FastAPI. Frontend med Next.js."
   },
   {
     "title": "Undersköterska",
     "company": "Länssjukhuset Ryhov",
     "duration": "2020 - 2024",
+    "category": "earlier",
     "description": "Arbetade med inneliggande patienter. Har jobbat på Kirurgisk vårdavdelning, medicin- och Rehabiliteringsmedicin."
   },
   {
     "title": "Vårdbiträde",
     "company": "Jönköpings kommun",
     "duration": "2019 - 2020",
-    "description": "Arbetade inom kommunens äldreomsog."
+    "category": "earlier",
+    "description": "Arbetade inom kommunens äldreomsorg."
   },
   {
-    "title": "Intervjuare för kund undersökning",
+    "title": "Intervjuare för kundundersökning",
     "company": "IWD, Jönköping",
     "duration": "Sommar 2017",
-    "description": "Arbetade som intervjuperson för kundundersökninngar inom marknadsföring"
+    "category": "earlier",
+    "description": "Arbetade som intervjuperson för kundundersökningar inom marknadsföring."
   },
   {
     "title": "Administrativ assistent",
     "company": "International Organization for Migration (IOM)",
     "duration": "2006 - 2017",
-    "description": "Arbetade med inneliggande patienter. Har jobbat på Kirurgisk vårdavdelning, medicin- och Rehabiliteringsmedicin."
+    "category": "earlier",
+    "description": "Arbetade med administrativa uppgifter inklusive dokumenthantering, inköpsförfrågningar, logistiskt stöd och koordinering av möten. Arbetade i en internationell miljö med kollegor från olika bakgrunder."
   },
   {
     "title": "Lärarassistent",
     "company": "College av Development Alternativ, Dhaka, Bangladesh",
     "duration": "2005 - 2006",
-    "description": "Arbetade med högstadieelever i ämnet Datrorkunskap"
+    "category": "earlier",
+    "description": "Arbetade med högstadieelever i ämnet Datorkunskap."
   }
-
 ]
-
-  
