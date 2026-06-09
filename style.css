@@ -445,7 +445,6 @@ a {
 }
 .content-page {
   height: auto;
-  min-height: 100vh;
   align-items: flex-start;
   padding-top: 110px;
   padding-bottom: 50px;
@@ -711,8 +710,8 @@ a {
 }
 /* Smaller photo variant for content pages */
 .img-box--sm {
-  width: 15vw;
-  height: 15vw;
+  width: 8vw;
+  height: 8vw;
 }
 @media (max-width: 768px) {
   .img-box--sm {
