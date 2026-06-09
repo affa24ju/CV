@@ -1036,6 +1036,111 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* Contact page – centered layout */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 9% 60px;
+  color: #fff;
+  text-align: center;
+}
+.contact-page .home-img {
+  margin-bottom: 28px;
+}
+.contact-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: cornflowerblue;
+  margin-bottom: 14px;
+}
+.contact-page > p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+.contact-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.contact-card {
+  background: #2b3a47;
+  border: 1.5px solid rgba(100, 149, 237, 0.2);
+  border-radius: 14px;
+  padding: 28px 32px;
+  width: 210px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: cornflowerblue;
+  box-shadow: 0 8px 24px rgba(100, 149, 237, 0.2);
+  color: #fff;
+}
+.contact-card i {
+  font-size: 38px;
+  color: cornflowerblue;
+}
+.contact-card-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #99aabb;
+  font-weight: 600;
+}
+.contact-card-value {
+  font-size: 13px;
+  color: #ddd;
+  word-break: break-all;
+  line-height: 1.4;
+}
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 100px 5% 40px;
+  }
+  .contact-page h1 {
+    font-size: 28px;
+  }
+  .contact-card {
+    width: 170px;
+    padding: 22px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-page h1 {
+    font-size: 24px;
+  }
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 /* Coming-soon placeholder card */
 .coming-soon-section {
   padding: 56px 9%;
