@@ -18,7 +18,7 @@
       "title": "Intermediate Machine Learning",
       "issuer": "Kaggle",
       "year": "2026",
-      "description": "Online kurs som bygger vidare på grundläggande ML-kunskper och fokuserar på praktiska problem i verkliga dataset."
+      "description": "Online kurs som bygger vidare på grundläggande ML-kunskaper och fokuserar på praktiska problem i verkliga dataset."
     },
     {
       "title": "Intro to Machine Learning",
@@ -30,25 +30,25 @@
       "title": "Undersköterska",
       "issuer": "MOA Lärcentrum, Kommunal Vuxenutbildning",
       "year": "2020",
-      "description": "Läste bland annat Medicin, Psykologi, Akutsjkvård och Hemsjukvård"
+      "description": "Läste bland annat Medicin, Psykologi, Akutsjukvård och Hemsjukvård."
     },
     {
       "title": "Web Developer",
       "issuer": "World Wide Web Institute",
       "year": "2005",
-      "description": "Certifikat för front-end webbutveckling med ASP, PHP, MySQL, Java"
+      "description": "Certifikat för front-end webbutveckling med ASP, PHP, MySQL och Java."
     },
     {
       "title": "Web Designer",
       "issuer": "World Wide Web Institute",
       "year": "2005",
-      "description": "Diptom för webbdesigning med HTML, CSS, Dreavweaver, JavaScript"
+      "description": "Diplom för webbdesign med HTML, CSS, Dreamweaver och JavaScript."
     },
     {
       "title": "General English, Intermediate 2",
       "issuer": "The British Council",
       "year": "2002",
-      "description": "Certifikat för engelska språk"
+      "description": "Certifikat för engelska språket."
     }
   ]
 }

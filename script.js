@@ -147,38 +147,54 @@ fetch("info.json")
 
 //Script för utbildning sidan
 document.addEventListener("DOMContentLoaded", ()=> {
-  //Läser data från json fil
   fetch('certificates.json')
     .then(response => response.json())
     .then(data => {
+      const educationList = document.getElementById('education-list');
       const certificateList = document.getElementById('certificate-list');
 
-      //Lägger till utbildningar
-      data.education.forEach(item => {
-        const certificateCard = document.createElement('div');
-        certificateCard.classList.add('certificate-card');
-        certificateCard.innerHTML = `
+      // Utbildningskort
+      if (educationList) {
+        data.education.forEach(item => {
+          const card = document.createElement('div');
+          card.classList.add('edu-card');
+          card.innerHTML = `
+            <span class="edu-card-year">${item.year}</span>
+            <i class="bx bx-graduation"></i>
             <h3>${item.degree}</h3>
-            <p><strong>Institution:</strong> ${item.institution}</p>
-            <p><strong>År:</strong> ${item.year}</p>
+            <p class="edu-institution"><i class="bx bx-buildings"></i> ${item.institution}</p>
             <p>${item.description}</p>
           `;
-          certificateList.appendChild(certificateCard);
+          educationList.appendChild(card);
+        });
+      }
 
-      });
+      // Certifikatkort
+      if (certificateList) {
+        data.certificates.forEach(item => {
+          const t = item.title.toLowerCase();
+          let icon = 'bx bx-award';
+          let isEarlier = false;
+          if (t.includes('machine learning')) { icon = 'bx bx-brain'; }
+          else if (t.includes('web developer'))  { icon = 'bx bx-code-alt'; }
+          else if (t.includes('web designer'))   { icon = 'bx bx-layout'; }
+          else if (t.includes('undersköterska')) { icon = 'bx bx-plus-medical'; isEarlier = true; }
+          else if (t.includes('english'))        { icon = 'bx bx-globe'; }
 
-      //Lägger till certifikat
-      data.certificates.forEach(item => {
-        const certificateCard = document.createElement('div');
-        certificateCard.classList.add('certificate-card');
-        certificateCard.innerHTML = `
-          <h3>${item.title}</h3>
-          <p><strong>Utfärdare:</strong> ${item.issuer}</p>
-          <p><strong>År:</strong> ${item.year}</p>
-          <p>${item.description}</p>
-        `;
-        certificateList.appendChild(certificateCard);
-      });
+          const card = document.createElement('div');
+          card.classList.add('cert-card');
+          card.innerHTML = `
+            <div class="cert-card-top">
+              <i class="${icon}${isEarlier ? ' cert-icon--earlier' : ''}"></i>
+              <span class="cert-card-year">${item.year}</span>
+            </div>
+            <h3>${item.title}</h3>
+            <p class="cert-issuer"><i class="bx bx-buildings"></i> ${item.issuer}</p>
+            <p>${item.description}</p>
+          `;
+          certificateList.appendChild(card);
+        });
+      }
     })
     .catch(error => console.error('Fel vid laddning av certifikater: ', error));
 });

@@ -906,6 +906,138 @@ a {
   flex-wrap: wrap;
   gap: 10px;
 }
+/* Utbildning & Certifikat page */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 820px;
+}
+.edu-card {
+  background: #2b3a47;
+  border: 1.5px solid rgba(100, 149, 237, 0.4);
+  border-radius: 14px;
+  padding: 28px 28px 22px;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.edu-card:hover {
+  transform: translateY(-4px);
+  border-color: cornflowerblue;
+  box-shadow: 0 8px 24px rgba(100, 149, 237, 0.2);
+}
+.edu-card-year {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 12px;
+  color: cornflowerblue;
+  font-weight: 600;
+  background: rgba(100, 149, 237, 0.12);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.edu-card > i {
+  font-size: 34px;
+  color: cornflowerblue;
+  display: block;
+  margin-bottom: 12px;
+}
+.edu-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  padding-right: 48px;
+}
+.edu-institution {
+  font-size: 13px;
+  color: #99aabb;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.edu-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 820px;
+}
+.cert-card {
+  background: #2b3a47;
+  border: 1.5px solid rgba(100, 149, 237, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: cornflowerblue;
+  box-shadow: 0 8px 24px rgba(100, 149, 237, 0.15);
+}
+.cert-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.cert-card-top i {
+  font-size: 26px;
+  color: cornflowerblue;
+}
+.cert-card-top i.cert-icon--earlier {
+  color: #8899bb;
+}
+.cert-card-year {
+  font-size: 12px;
+  color: cornflowerblue;
+  font-weight: 600;
+  background: rgba(100, 149, 237, 0.1);
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.cert-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+.cert-issuer {
+  font-size: 12px;
+  color: #99aabb;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.cert-card p {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.55;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Coming-soon placeholder card */
 .coming-soon-section {
   padding: 56px 9%;
