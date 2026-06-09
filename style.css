@@ -475,7 +475,7 @@ a {
   height: auto;
   align-items: flex-start;
   padding-top: 110px;
-  padding-bottom: 50px;
+  padding-bottom: 8px;
 }
 .content-page .home-info {
   width: 100%;
@@ -755,7 +755,7 @@ a {
 }
 /* About page sections */
 .about-section {
-  padding: 56px 9%;
+  padding: 30px 9% 56px;
   color: #fff;
 }
 .about-section--alt {
@@ -940,13 +940,16 @@ a {
 /* Responsive for about sections */
 @media (max-width: 768px) {
   .about-section {
-    padding: 40px 5%;
+    padding: 24px 5% 40px;
   }
   .about-section h2 {
     font-size: 24px;
   }
   .coming-soon-section {
     padding: 40px 5%;
+  }
+  .home.content-page {
+    min-height: auto;
   }
 }
 @media (max-width: 480px) {
@@ -955,5 +958,8 @@ a {
   }
   .coming-soon-card {
     padding: 36px 20px;
+  }
+  .home.content-page {
+    min-height: auto;
   }
 }
