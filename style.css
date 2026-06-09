@@ -910,8 +910,7 @@ a {
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 820px;
+  gap: 36px;
 }
 .edu-card {
   background: #2b3a47;
@@ -967,8 +966,7 @@ a {
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  max-width: 820px;
+  gap: 36px;
 }
 .cert-card {
   background: #2b3a47;
