@@ -1,0 +1,66 @@
+[
+  {
+    "title": "MigraineSign",
+    "category": "Examensarbete",
+    "featured": true,
+    "year": "2026",
+    "status": "Klar",
+    "description": "AI-baserad webbapplikation för gestigenkänning i realtid, där teckenspråk översätts till text i låg-stimuli-situationer för migränpatienter. Projektet tilldelades stipendium för bästa examensarbete vid Jönköping University 2026.",
+    "highlights": [
+      "Stipendium för bästa examensarbete – Jönköping University 2026",
+      "Realtidsigenkänning av teckenspråksgester via webbkamera",
+      "Fullstack-integration av maskininlärningsmodell i webbapplikation"
+    ],
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "TensorFlow"],
+    "github": "https://github.com/affa24ju/migraine-sign",
+    "image": "image/projects/MigraineSignImage.png"
+  },
+  {
+    "title": "Teckenspråksöversättare",
+    "category": "LIA-projekt",
+    "featured": false,
+    "year": "2026",
+    "status": "Klar",
+    "description": "Verktyg för att översätta text till teckenspråk i realtid, utvecklat under LIA på RISE Research Institutes of Sweden.",
+    "highlights": [
+      "Text-till-teckenspråk-översättning i realtid",
+      "REST API med Python och FastAPI",
+      "Modernt gränssnitt med Next.js och TypeScript"
+    ],
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS"],
+    "github": "",
+    "image": "image/projects/TeckenspråksöversättareImage.png"
+  },
+  {
+    "title": "Blickigenkänning med AI",
+    "category": "LIA-projekt",
+    "featured": false,
+    "year": "2025",
+    "status": "Klar",
+    "description": "AI-baserad lösning för blickigenkänning i realtid, utvecklad under LIA på RISE Research Institutes of Sweden.",
+    "highlights": [
+      "AI-driven blickigenkänning via kamera",
+      "Backend med Python och FastAPI",
+      "Realtidsbehandling av videoström"
+    ],
+    "techStack": ["Python", "FastAPI", "Next.js", "TensorFlow"],
+    "github": "",
+    "image": "image/projects/BlickigenkänningImage.png"
+  },
+  {
+    "title": "CV-webbplats",
+    "category": "Eget projekt",
+    "featured": false,
+    "year": "2026",
+    "status": "Pågående",
+    "description": "Personlig CV-webbplats med responsiv design, dynamisk innehållsladdning från JSON och animerade element.",
+    "highlights": [
+      "Responsiv design för alla skärmstorlekar",
+      "Dynamisk rendering från JSON-filer",
+      "Mörkt tema med CSS-animationer"
+    ],
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "github": "",
+    "image": "image/projects/CVWebbplatsImage.png"
+  }
+]
