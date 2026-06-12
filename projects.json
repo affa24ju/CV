@@ -25,9 +25,11 @@
     "highlights": [
       "Text-till-teckenspråk-översättning i realtid",
       "REST API med Python och FastAPI",
-      "Modernt gränssnitt med Next.js och TypeScript"
+      "Modernt gränssnitt med Next.js och TypeScript",
+      "Inloggning med Google/ GitHut / email & lösenord",
+      "Enhetstester med Jest och React Testing Library"
     ],
-    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "Docker", "Lokal språkmedell"],
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "Docker", "Lokal språkmedell", "PostgreSQL", "Prisma", "Jest", "React Testing Library", "Auth.js v5"],
     "github": "https://github.com/P3SourceCode/SignLign",
     "image": "image/projects/SignLignImage.jpg"
   },
