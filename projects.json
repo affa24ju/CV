@@ -13,10 +13,10 @@
     ],
     "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "TensorFlow"],
     "github": "https://github.com/affa24ju/migraine-sign",
-    "image": "image/projects/MigraineSignImage.png"
+    "image": "image/projects/MigraineSignImage.jpg"
   },
   {
-    "title": "Teckenspråksöversättare",
+    "title": "SignLign",
     "category": "LIA-projekt",
     "featured": false,
     "year": "2026",
@@ -27,9 +27,9 @@
       "REST API med Python och FastAPI",
       "Modernt gränssnitt med Next.js och TypeScript"
     ],
-    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS"],
-    "github": "",
-    "image": "image/projects/TeckenspråksöversättareImage.png"
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "Docker", "Lokal språkmedell"],
+    "github": "https://github.com/P3SourceCode/SignLign",
+    "image": "image/projects/SignLignImage.jpg"
   },
   {
     "title": "Blickigenkänning med AI",
@@ -41,26 +41,32 @@
     "highlights": [
       "AI-driven blickigenkänning via kamera",
       "Backend med Python och FastAPI",
-      "Realtidsbehandling av videoström"
+      "Filuppladdningsfunktionalitet",
+      "Eyetracking-analys med facedetection och gazedetektionsmodell",
+      "Olika tidslinjer för att analysera blickdata",
+      "Synkronisera med originalvideon för jämförelse",
+      "Jobbstatusspårning",
+      "Unikt personantal och statistik över blickengagemang (BYTETracker)"
     ],
-    "techStack": ["Python", "FastAPI", "Next.js", "TensorFlow"],
-    "github": "",
-    "image": "image/projects/BlickigenkänningImage.png"
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS",  "BYTETracker", "Docker", "Eyetracingmodel - Eye contact CNN, MobileGaze", "Facedetectionmodel - RetinaFace, MogoFace"],
+    "github": "https://github.com/KhaAbo/A_Space_client",
+    "image": "image/projects/BlickigenkänningImage.jpg"
   },
   {
-    "title": "CV-webbplats",
+    "title": "MindMate",
     "category": "Eget projekt",
     "featured": false,
-    "year": "2026",
-    "status": "Pågående",
-    "description": "Personlig CV-webbplats med responsiv design, dynamisk innehållsladdning från JSON och animerade element.",
+    "year": "2025",
+    "status": "Klar",
+    "description": "En fullstack-webbapplikation som är designad för att stödja mental hälsa genom daglig journalföring och humörspårning. Användare kan logga sitt känslotillstånd, skriva reflektioner och visualisera mönster över tid med interaktiva diagram. Den har också en AI-driven chattfunktion som ger tips och förslag för välmående.",
     "highlights": [
-      "Responsiv design för alla skärmstorlekar",
-      "Dynamisk rendering från JSON-filer",
-      "Mörkt tema med CSS-animationer"
+      "Säker autentisering (inloggning & registrering) med Spring Security och JWT",
+      "Daglig dagbok med humörspårning-baserat på emojis",
+      "AI-chattintegration för personliga välmående-tips",
+      "Testbetalning med Stripe API"
     ],
-    "techStack": ["HTML", "CSS", "JavaScript"],
-    "github": "",
-    "image": "image/projects/CVWebbplatsImage.png"
+    "techStack": ["Angular", "Spring Boot", "MongoDB", "TailWind CSS","REST API", "JWT","TypeScript","Java", "Spring AI", "Stripe API"],
+    "github": "https://github.com/affa24ju/MindMateFrontend",
+    "image": "image/projects/MindMateImage.jpg"
   }
 ]

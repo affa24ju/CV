@@ -198,6 +198,70 @@ document.addEventListener("DOMContentLoaded", ()=> {
     })
     .catch(error => console.error('Fel vid laddning av certifikater: ', error));
 });
+// Fetchar projects.json för projektsidan
+fetch("projects.json")
+  .then(res => res.json())
+  .then(data => {
+    const featuredEl = document.getElementById("featured-project");
+    const gridEl = document.getElementById("project-grid");
+    if (!featuredEl && !gridEl) return;
+
+    const badgeClass = {
+      "Examensarbete": "project-badge--thesis",
+      "LIA-projekt":   "project-badge--lia",
+      "Eget projekt":  "project-badge--personal"
+    };
+
+    data.forEach(item => {
+      const badge = `<span class="project-badge ${badgeClass[item.category] || 'project-badge--lia'}">${item.category} · ${item.year}</span>`;
+      const statusClass = item.status === "Pågående" ? "project-status-chip--ongoing" : "";
+      const statusChip = `<span class="project-status-chip ${statusClass}"><i class="bx bx-check-circle"></i> ${item.status}</span>`;
+      const chips = item.techStack.map(t => `<span class="chip">${t}</span>`).join('');
+      const highlights = item.highlights.map(h => `<li>${h}</li>`).join('');
+      const githubBtn = item.github
+        ? `<a href="${item.github}" target="_blank" rel="noopener" class="project-link-btn"><i class="bx bxl-github"></i> GitHub</a>`
+        : '';
+
+      if (item.featured && featuredEl) {
+        const imgHtml = item.image
+          ? `<img src="${item.image}" alt="${item.title}" class="project-featured-img">`
+          : `<div class="project-featured-img-placeholder"><i class="bx bx-code-block"></i></div>`;
+
+        featuredEl.innerHTML = `
+          <div>
+            ${badge}${statusChip}
+            <h2 class="project-title">${item.title}</h2>
+            <p class="project-description">${item.description}</p>
+            <ul class="project-highlights">${highlights}</ul>
+            <div class="project-tech-chips">${chips}</div>
+            <div class="project-links">${githubBtn}</div>
+          </div>
+          <div>${imgHtml}</div>
+        `;
+      } else if (!item.featured && gridEl) {
+        const imgHtml = item.image
+          ? `<img src="${item.image}" alt="${item.title}" class="project-card-img">`
+          : `<div class="project-card-img-placeholder"><i class="bx bx-code-block"></i></div>`;
+
+        const card = document.createElement("div");
+        card.classList.add("project-card");
+        card.innerHTML = `
+          ${imgHtml}
+          <div class="project-card-body">
+            ${badge}${statusChip}
+            <h3 class="project-title">${item.title}</h3>
+            <p class="project-description">${item.description}</p>
+            <ul class="project-highlights">${highlights}</ul>
+            <div class="project-tech-chips">${chips}</div>
+            <div class="project-links">${githubBtn}</div>
+          </div>
+        `;
+        gridEl.appendChild(card);
+      }
+    });
+  })
+  .catch(error => console.error('Det gick inte att hämta projekt:', error));
+
 //Funktion för hamburger-meny
 function toggleMenu(){
   const menu = document.querySelector('.navbar ul');
