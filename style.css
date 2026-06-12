@@ -138,13 +138,13 @@ a {
 .home-info p {
   font-size: 15px;
   line-height: 1.7;
-  margin: 8px 0 12px;
+  margin: 8px 0 22px;
 }
 .info-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .chip {
   display: inline-flex;
@@ -229,26 +229,25 @@ a {
   box-shadow: 0 0 10px cornflowerblue;
   pointer-events: all;
 }
-.home-info .btn-sci .sci a[title]:hover {
-  pointer-events: none; /* Hindrar webbläsaren från att visa den vanliga tooltipp */
-  animation: none;
-}
-/* Tooltip-stil för att visa text när muspekare är över ikonen */
-.home-info .btn-sci .sci a:hover::after {
-  content: attr(title); /* Texten från title-attributet */
+/* Tooltip för sociala ikoner */
+.home-info .btn-sci .sci a::after {
+  content: attr(title);
   position: absolute;
-  top: -30px; /* Justera positionen */
+  bottom: calc(100% + 6px);
   left: 50%;
   transform: translateX(-50%);
   background-color: cornflowerblue;
   color: #fff;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 5px;
   font-size: 12px;
   white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.home-info .btn-sci .sci a:hover::after {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  animation: none;
 }
 .home-img .img-box {
   position: relative;

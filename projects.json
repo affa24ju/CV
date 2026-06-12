@@ -26,10 +26,10 @@
       "Text-till-teckenspråk-översättning i realtid",
       "REST API med Python och FastAPI",
       "Modernt gränssnitt med Next.js och TypeScript",
-      "Inloggning med Google/ GitHut / email & lösenord",
+      "Inloggning med Google/ GitHub / email & lösenord",
       "Enhetstester med Jest och React Testing Library"
     ],
-    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "Docker", "Lokal språkmedell", "PostgreSQL", "Prisma", "Jest", "React Testing Library", "Auth.js v5"],
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS", "Docker", "Lokal språkmodell", "PostgreSQL", "Prisma", "Jest", "React Testing Library", "Auth.js v5"],
     "github": "https://github.com/P3SourceCode/SignLign",
     "image": "image/projects/SignLignImage.jpg"
   },
@@ -50,7 +50,7 @@
       "Jobbstatusspårning",
       "Unikt personantal och statistik över blickengagemang (BYTETracker)"
     ],
-    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS",  "BYTETracker", "Docker", "Eyetracingmodel - Eye contact CNN, MobileGaze", "Facedetectionmodel - RetinaFace, MogoFace"],
+    "techStack": ["Python", "FastAPI", "Next.js", "TypeScript", "TailWind CSS",  "BYTETracker", "Docker", "Eyetrackingmodel - Eye contact CNN, MobileGaze", "Facedetectionmodel - RetinaFace, MogFace"],
     "github": "https://github.com/KhaAbo/A_Space_client",
     "image": "image/projects/BlickigenkänningImage.jpg"
   },
@@ -63,7 +63,7 @@
     "description": "En fullstack-webbapplikation som är designad för att stödja mental hälsa genom daglig journalföring och humörspårning. Användare kan logga sitt känslotillstånd, skriva reflektioner och visualisera mönster över tid med interaktiva diagram. Den har också en AI-driven chattfunktion som ger tips och förslag för välmående.",
     "highlights": [
       "Säker autentisering (inloggning & registrering) med Spring Security och JWT",
-      "Daglig dagbok med humörspårning-baserat på emojis",
+      "Daglig dagbok med humörspårning baserat på emojis",
       "AI-chattintegration för personliga välmående-tips",
       "Testbetalning med Stripe API"
     ],
