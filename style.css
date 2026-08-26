@@ -1314,7 +1314,8 @@ a {
 .contact-card-value {
   font-size: 13px;
   color: #ddd;
-  word-break: break-all;
+  word-break: normal;
+  overflow-wrap: break-word;
   line-height: 1.4;
 }
 .contact-actions {
