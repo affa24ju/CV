@@ -93,47 +93,47 @@ a {
   white-space: nowrap;
   margin-bottom: 10px;
 }
-.home-info h2 .role-span {
+.home-info h2 .role-highlight {
   position: relative;
   display: inline-block;
   color: transparent;
   white-space: nowrap;
   -webkit-text-stroke: 0.7px cornflowerblue;
-  animation: display-text 12s linear infinite;
-  animation-delay: calc(-4s * var(--i));
 }
-/* h2 animation*/
-@keyframes display-text {
-  0%,
-  32% {
-    display: inline-block;
-  }
-  33%,
-  100% {
-    display: none;
-  }
-}
-.home-info h2 .role-span::before {
+.home-info h2 .role-highlight::before {
   content: attr(data-text);
   position: absolute;
+  left: 0;
+  top: 0;
   width: 0;
   border-right: 2px solid cornflowerblue;
   color: cornflowerblue;
   white-space: nowrap;
   overflow: hidden;
-  animation: fill-text 4s linear infinite;
-  animation-delay: calc(-4s * var(--i));
+  animation: fill-text-once 1.6s ease-out forwards;
 }
-/*Animation för Javautvecklare texten. Filling text with solid color*/
-@keyframes fill-text {
-  10%,
-  100% {
+/*Fyller "Junior Javautvecklare" med solid färg en gång, ingen loop*/
+@keyframes fill-text-once {
+  0% {
     width: 0;
   }
-  70%,
-  90% {
+  100% {
     width: 100%;
+    border-right-color: transparent;
   }
+}
+.home-info h2 .role-divider {
+  display: inline-block;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+}
+.home-info h2 .role-sub {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ddd;
+  vertical-align: middle;
 }
 .home-info p {
   font-size: 15px;
