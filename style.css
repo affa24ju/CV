@@ -158,8 +158,8 @@ a {
   vertical-align: middle;
 }
 .home-info p {
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
   margin: 6px 0;
 }
 .home-info p:last-of-type {
@@ -574,7 +574,7 @@ a {
     font-size: 22px;
   }
   .home-info p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .home-img .img-box {
     width: 60vw;
@@ -627,7 +627,7 @@ a {
     white-space: normal;
   }
   .home-info p {
-    font-size: 12px;
+    font-size: 13px;
   }
   .info-chips {
     gap: 8px;
@@ -745,7 +745,7 @@ a {
     font-size: 18px;
   }
   .home-info p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .chip {
     font-size: 11px;
