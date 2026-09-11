@@ -160,7 +160,7 @@ a {
 .home-info p {
   font-size: 16px;
   line-height: 1.65;
-  margin: 6px 0;
+  margin: 0 0 14px;
 }
 .home-info p:last-of-type {
   margin-bottom: 20px;
@@ -798,6 +798,9 @@ a {
   border-left: 3px solid cornflowerblue;
   padding-left: 20px;
   color: #ddd;
+}
+.about-bg-text p:not(:last-child) {
+  margin-bottom: 14px;
 }
 /* Career timeline */
 .timeline {
