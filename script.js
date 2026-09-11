@@ -3,32 +3,25 @@ const skillList = document.getElementById("skill-list")
 
 // Objekt som mappar de engelska kategorinamnen till svenska
 const categoryTranslation = {
-    "programmingLanguages": "Programmeringsspråk",
-    "backendDevelopment": "Backend",
-    "frontendDevelopment": "Frontend",
-    "databaseManagement": "Databaser",
-    "versionControl": "Versionshantering",
-    "uiUxDesign": "UI/UX Design",
-    "toolsAndLibraries": "Verktyg & Bibliotek",
-    "testing": "Testning",
-    "projectManagement": "Projektledning",
-    "communication": "Kommunikation & Språk",
-    "deploymentPlatforms": "Deployment"
+    "itAndSystem": "IT & System",
+    "serviceAndWorkways": "Service & Arbetssätt",
+    "digitalizationAndAI": "Digitalisering & AI",
+    "technicalFoundation": "Teknisk Utvecklingsgrund",
+    "itServiceManagement": "IT Service Management"
 };
 
 // Boxicons-klass per kategori
 const categoryIcons = {
-    "programmingLanguages": "bx bx-code-alt",
-    "backendDevelopment": "bx bx-server",
-    "frontendDevelopment": "bx bx-layout",
-    "databaseManagement": "bx bx-data",
-    "versionControl": "bx bxl-git",
-    "uiUxDesign": "bx bx-palette",
-    "toolsAndLibraries": "bx bx-wrench",
-    "testing": "bx bx-check-shield",
-    "projectManagement": "bx bx-task",
-    "communication": "bx bx-globe",
-    "deploymentPlatforms": "bx bx-cloud-upload"
+    "itAndSystem": "bx bx-server",
+    "serviceAndWorkways": "bx bx-group",
+    "digitalizationAndAI": "bx bx-brain",
+    "technicalFoundation": "bx bx-code-alt",
+    "itServiceManagement": "bx bx-certification"
+};
+
+// Kategorier som är under pågående certifiering, visas med en "Pågående"-badge
+const categoryStatus = {
+    "itServiceManagement": "Pågående"
 };
 
 //Fetchar info.json fil som visas i aboutMe.html sidan
@@ -129,12 +122,15 @@ fetch("info.json")
                 const title = categoryTranslation[category] || category.replace(/([A-Z])/g, " $1");
                 const icon = categoryIcons[category] || "bx bx-code-alt";
 
+                const status = categoryStatus[category];
+
                 const card = document.createElement("div");
                 card.classList.add("skill-card");
                 card.innerHTML = `
                     <div class="skill-card-header">
                         <i class="${icon}"></i>
                         <h3>${title}</h3>
+                        ${status ? `<span class="skill-badge">${status}</span>` : ''}
                     </div>
                     <div class="skill-card-chips">
                         ${skills.map(s => `<span class="chip">${s}</span>`).join('')}

@@ -1,37 +1,17 @@
 {
-    "programmingLanguages": [
-      "Java", "JavaScript", "TypeScript", "Python"
+    "itAndSystem": [
+      "Systemförståelse", "REST API:er", "databaser", "applikationer", "Docker", "Git", "felsökning", "teknisk problemlösning"
     ],
-    "backendDevelopment": [
-      "Spring Boot", "Maven", "Quarkus", "Jakarta EE", "Node.js", "REST API", "Microservices","Spring Security", "OpenAi"
+    "serviceAndWorkways": [
+      "Agila metoder", "Scrum", "Kanban", "samarbete i distribuerade team", "dokumentation", "problemlösning"
     ],
-    "frontendDevelopment": [
-      "HTML/CSS", "Bootstrap", "TailWind CSS", "React", "Angular", "Next.Js", "SPA (Single Page Application)"
+    "digitalizationAndAI": [
+      "AI-integration", "maskininlärning", "automatisering", "användarcentrerad utveckling", "tillgänglighet"
     ],
-    "databaseManagement": [
-      "MySQL", "PostgreSQL", "MongoDB (inkl. MongoDB Atlas)"
+    "technicalFoundation": [
+      "Java", "Spring Boot", "JavaScript", "TypeScript", "Python", "React", "Angular", "Next.js", "PostgreSQL", "MongoDB"
     ],
-    "versionControl": [
-      "Git", "GitHub"
-    ],
-    "uiUxDesign": [
-      "Figma", "Lovable"
-    ],
-    "toolsAndLibraries": [
-      "Docker", "Swagger", "Postman", "Kaggle"
-    ],
-    "testing": [
-      "Unit testing med JUnit", "Jest", "React Testing Library"
-    ],
-    "projectManagement": [
-      "Scrum", "Kanban", "Jira", "Mural", "GitHub Projects"
-    ],
-    "communication": [
-      "Svenska", "Engelska", "Bengali", "Svenskt teckenspråk"
-    ],
-    "deploymentPlatforms": [
-      "DigitalOcean", "Render", "Railway"
+    "itServiceManagement": [
+      "ITIL Foundation (Version 5)"
     ]
-   
   }
-  
