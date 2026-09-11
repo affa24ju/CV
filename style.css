@@ -73,8 +73,8 @@ a {
   align-items: center;
   /*gap between image & text*/
   gap: 44px;
-  height: 65vh;
-  padding: 15px 9% 0;
+  min-height: 65vh;
+  padding: 100px 9% 40px;
   color: #fff;
 }
 .home-info h1 {
@@ -92,6 +92,28 @@ a {
   text-align: center;
   white-space: nowrap;
   margin-bottom: 10px;
+}
+.home-info h2.subtitle {
+  display: block;
+  font-size: 19px;
+  font-weight: 400;
+  color: #ddd;
+  margin-top: 6px;
+}
+.tagline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: cornflowerblue;
+  letter-spacing: 0.3px;
+  margin: 10px 0 4px;
+}
+.tagline-divider {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
 }
 .home-info h2 .role-highlight {
   position: relative;
@@ -137,8 +159,11 @@ a {
 }
 .home-info p {
   font-size: 15px;
-  line-height: 1.7;
-  margin: 8px 0 22px;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+.home-info p:last-of-type {
+  margin-bottom: 20px;
 }
 .info-chips {
   display: flex;
