@@ -1311,6 +1311,13 @@ a {
   color: #ddd;
   line-height: 1.8;
   max-width: 520px;
+  margin-bottom: 18px;
+}
+.contact-page > p.contact-cta {
+  font-size: 17px;
+  font-weight: 600;
+  color: cornflowerblue;
+  margin-top: 8px;
   margin-bottom: 40px;
 }
 .contact-cards {
